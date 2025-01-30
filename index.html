@@ -11,7 +11,7 @@
   <!-- ポートフォリオや学習の時 検索結果に出ないように設定 -->
   <meta name="robots" content="noindex">
   <!-- meta情報 -->
-  <title>タイトル</title>
+  <title>株式会社ETELLIA工務店</title>
   <meta name="description" content="ウェブページの概要や説明" />
   <meta name="keywords" content="ウェブページの内容に関連するキーワード" />
   <!-- ogp -->
@@ -26,7 +26,9 @@
   <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!-- swiper css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <!-- css -->
@@ -46,43 +48,81 @@
 
   <!-- ヘッダー -->
   <header class="header layout-header">
-    <div class="header__inner">
-      <button class="header__hamburger js-hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="header__nav">
-        <ul class="header__nav-items">
-          <li class="header__nav-item">
-            <a href="#">top</a>
+    <div class="header-inner">
+      <!-- <div class="header-hamburger">
+
+      </div> -->
+      <div class="header-hamburger-wrapper">
+        <p class="header-hamburger-text">menu</p>
+        <button class="header-hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+  
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-items">
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+            </a>
           </li>
-          <li class="header__nav-item">
-            <a href="#">about</a>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+            </a>
           </li>
-          <li class="header__nav-item">
-            <a href="#">works</a>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+            </a>
           </li>
-          <li class="header__nav-item header__nav-item--contact">
-            <a href="#" target="_blank" rel="noopener">contact</a>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+            </a>
           </li>
         </ul>
       </nav>
 
-      <div class="header__drawer js-drawer">
-        <nav class="header__drawer-nav">
-          <ul class="header__drawer-items">
-            <li class="header__drawer-item">
-              <a href="#">top</a>
+      <div class="header-drawer js-drawer">
+        <nav class="header-drawer-nav">
+          <ul class="header-drawer-items">
+            <li class="header-drawer-item">
+              <a href="#">ホーム</a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">about</a>
+            <li class="header-drawer-item">
+              <a href="#">会社概要</a>
             </li>
-            <li class="header__drawer-item">
-              <a href="#">works</a>
+            <li class="header-drawer-item">
+              <a href="#">サービスについて</a>
             </li>
-            <li class="header__drawer-item header__drawer-item--contact">
-              <a href="#" target="_blank" rel="noopener">contact</a>
+            <li class="header-drawer-item">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">施工事例</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li class="header-drawer-item header-drawer-item-sns">
+              <a href="#">
+                <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+              </a>
+              <a href="#">
+                <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+              </a>
+              <a href="#">
+                <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+              </a>
+              <a href="#">
+                <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+              </a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="tel:043-111-1234"><span>tel</span>043-111-1234</a>
             </li>
           </ul>
         </nav>
@@ -90,15 +130,17 @@
     </div>
   </header>
 
-  <!-- ファーストビュー -->
-  <section class="fv js-fv">
-    <div class="fv__inner">
-
-      <div class="fv__title">
-        <h2 class="fv__main-title">外構工事のことなら<br>何でもご相談ください</h2>
+  <!-- メインビュー -->
+  <section class="mv js-mv">
+    <div class="mv-nner">
+      <div class="mv-content">
+        <h1 class="mv-title">
+          <span>always , all of us have</span>he soul of steel
+        </h1>
+        <p class="mv-text">私たちは品質・スピード・機動力を追及しているプロフェッショナル集団です。</p>  
       </div>
-      <div class="fv__img">
-        <img src="./images/common/fv.jpg" alt="省略">
+      <div class="mv-img">
+        <img src="./images/common/mv.jpg" alt="省略">
       </div>
     </div>
   </section>
