@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- 自動的に電話番号と認識してリンク化する機能を無効 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- ポートフォリオや学習の時 検索結果に出ないように設定 -->
+  <meta name="robots" content="noindex">
+  <!-- meta情報 -->
+  <title>タイトル</title>
+  <meta name="description" content="ウェブページの概要や説明" />
+  <meta name="keywords" content="ウェブページの内容に関連するキーワード" />
+  <!-- ogp -->
+  <meta property="og:title" content="共有された際のページのタイトル" />
+  <meta property="og:type" content="ページの種類 例:website、article、videoなど">
+  <meta property="og:url" content="ページのURLを指定" />
+  <meta property="og:image" content="ページを共有した際に表示される画像のURL" />
+  <meta property="og:site_name" content="サイトの名前" />
+  <meta property="og:description" content="ページの説明" />
+  <!-- ファビコン -->
+  <link href="#" rel="icon" />
+  <!-- Googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- css -->
+  <link href="./css/styles.css" rel="stylesheet">
+  <!-- JavaScript jquery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- JavaScript inview -->
+  <script defer src="./js/jquery.inview.min.js"></script>
+  <!-- JavaScript swiper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- JavaScript original-->
+  <script defer src="./js/script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header layout-header">
+    <div class="header__inner">
+      <button class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="#">top</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">about</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">works</a>
+          </li>
+          <li class="header__nav-item header__nav-item--contact">
+            <a href="#" target="_blank" rel="noopener">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <ul class="header__drawer-items">
+            <li class="header__drawer-item">
+              <a href="#">top</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">about</a>
+            </li>
+            <li class="header__drawer-item">
+              <a href="#">works</a>
+            </li>
+            <li class="header__drawer-item header__drawer-item--contact">
+              <a href="#" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ファーストビュー -->
+  <section class="fv js-fv">
+    <div class="fv__inner">
+
+      <div class="fv__title">
+        <h2 class="fv__main-title">外構工事のことなら<br>何でもご相談ください</h2>
+      </div>
+      <div class="fv__img">
+        <img src="./images/common/fv.jpg" alt="省略">
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

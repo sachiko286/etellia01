@@ -1,0 +1,6 @@
+@use "../global" as *;
+
+.test h3 {
+  font-size: rem(50);
+  color: $red;
+}
