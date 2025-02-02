@@ -28,27 +28,30 @@ html {
 
   @else {
     //PCファースト
-    //inner以上
-    font-size: $base-font-size;
+    // 768px〜
+    font-size: calc($base-font-size / 1.5);
+
 
     // 1500px以上
     @media (min-width: 1500px) {
-      font-size: $base-font-size * 1.5;
+      font-size: $base-font-size ;
     }
 
     // 768px〜inner
-    @media (max-width: $inner) {
-      font-size: vw(strip-unit($inner), strip-unit($base-font-size));
-    }
+    // @media (max-width: $inner) {
+    //   font-size: vw(strip-unit($inner), strip-unit($base-font-size));
+    // }
 
     // 375px〜767px
     @include mq("md") {
-      font-size: $base-font-size * 0.9;
+      font-size: calc($base-font-size / 1.5 * 0.9);
     }
 
     // 375px以下
     @media (max-width: 375px) {
-      font-size: vw(375, strip-unit($base-font-size));
+    //   font-size: vw(375, strip-unit($base-font-size));
+      // font-size: vw(375, strip-unit(calc($base-font-size / 1.5) * 0.9));
+
     }
   }
 }
@@ -81,4 +84,6 @@ a:hover {
       opacity: 1;
     }
   }
+
+
 }

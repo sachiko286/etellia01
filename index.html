@@ -52,15 +52,16 @@
       <!-- <div class="header-hamburger">
 
       </div> -->
-      <div class="header-hamburger-wrapper">
-        <p class="header-hamburger-text">menu</p>
-        <button class="header-hamburger js-hamburger">
+      <button class="header-hamburger js-hamburger">
+
+        <div class="header-hamburger-wrapper">
+          <p class="header-hamburger-text">menu</p>
           <span></span>
           <span></span>
           <span></span>
-        </button>
-  
-      </div>
+        </div>
+      </button>
+
       <nav class="header-nav">
         <ul class="header-nav-items">
           <li class="header-nav-item">
@@ -107,22 +108,32 @@
             <li class="header-drawer-item">
               <a href="#">お問い合わせ</a>
             </li>
-            <li class="header-drawer-item header-drawer-item-sns">
-              <a href="#">
-                <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
-              </a>
-              <a href="#">
-                <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
-              </a>
-              <a href="#">
-                <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
-              </a>
-              <a href="#">
-                <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
-              </a>
-            </li>
-            <li class="header-drawer-item">
+            <li>
+              <ul class="header-drawer-item-sns header-nav-items">
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+              </ul>
+            <li class="header-drawer-item header-drawer-item-tel">
               <a href="tel:043-111-1234"><span>tel</span>043-111-1234</a>
+            </li>
             </li>
           </ul>
         </nav>
@@ -130,20 +141,128 @@
     </div>
   </header>
 
-  <!-- メインビュー -->
-  <section class="mv js-mv">
-    <div class="mv-nner">
-      <div class="mv-content">
-        <h1 class="mv-title">
-          <span>always , all of us have</span>he soul of steel
-        </h1>
-        <p class="mv-text">私たちは品質・スピード・機動力を追及しているプロフェッショナル集団です。</p>  
-      </div>
-      <div class="mv-img">
+  <main class="main">
+    <!-- メインビュー -->
+    <section class="mv">
+      <div class="mv-nner">
+        <div class="mv-content">
+          <h1 class="mv-title">
+            <span>always , all of us have</span>he soul of steel
+          </h1>
+          <p class="mv-text">私たちは品質・スピード・機動力を追及しているプロフェッショナル集団です。</p>
+        </div>
+        <!-- <div class="mv-img">
         <img src="./images/common/mv.jpg" alt="省略">
+      </div> -->
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- concept -->
+    <section class="concept">
+      <div class="concept-inner inner">
+        <h2 class="concept-title section-title">
+          <div class="section-title-en-right">
+            co<span>n</span>cept
+          </div>
+          <h3 class="section-title-ja">
+            ETELLIA工務店について
+          </h3>
+        </h2>
+        <div class="concept-text">
+          私たちETELLIA工務店は、技のプロフェッショナル集団です。<br>
+          新築一戸建ての注文住宅から大型ビルの施工まで幅広く行っております。<br><br>
+          お家を買うということは決して安い買い物ではございません。<br>
+          <span>『一生に一度の大きな買い物をいい思い出に』</span><br>
+          心からそう願う職人たちがあなたのお家づくりをサポートさせていただきます。
+        </div>
+        <div class="concept-img">
+          <img src="./images/common/concept.webp" alt="" width="" height="" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- our service -->
+    <section class="service">
+      <div class="service-inner inner">
+        <h2 class="service-title section-title">
+          <div class="section-title-en-left">
+            ou<span>r</span>&nbsp;service
+          </div>
+          <h3 class="section-title-ja">
+            当社サービスについて
+          </h3>
+        </h2>
+        <ul class="service-img-first">
+          <li class="service-img-item">
+            <a href="#" class="service-img-link">
+              <img src="./images/common/service01.webp" alt="注文住宅イメージ図" loading="lazy" decoding="async">
+              <p class="service-img-mask">
+                注文住宅
+              </p>
+            </a>
+          </li>
+          <li class="service-img-item">
+            <a href="#" class="service-img-link">
+              <img src="./images/common/service02.webp" alt="リフォームイメージ図" loading="lazy" decoding="async">
+              <p class="service-img-mask">
+                リフォーム
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul  class="service-img-second">
+          <li class="service-img-item">
+            <a href="#" class="service-img-link">
+              <img src="./images/common/service03.webp" alt="外構工事イメージ図" loading="lazy" decoding="async">
+              <p class="service-img-mask">
+                外構工事
+              </p>
+            </a>
+          </li>
+          <li class="service-img-item">
+            <a href="#" class="service-img-link">
+              <img src="./images/common/service04.webp" alt="オール電化工事イメージ図" loading="lazy" decoding="async">
+              <p class="service-img-mask">
+                オール電化工事
+              </p>
+            </a>
+          </li>
+          <li class="service-img-item">
+            <a href="#" class="service-img-link">
+              <img src="./images/common/service05.webp" alt="解体工事イメージ図" loading="lazy" decoding="async">
+              <p class="service-img-mask">
+                解体工事
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="service-button">
+        <a href="#" class="button-read">
+          Read more
+        </a>
+      </div>
+
+    </section>
+
+
+    <h2 class="section-title">
+      <div class="section-title-en-right">
+        co<span>n</span>cept
+      </div>
+    </h2>
+
+    <h3 class="section-title-ja">
+      当社からのお知らせ
+    </h3>
+
+    <a href="#" class="button-read">
+      Read more
+    </a>
+
+  </main>
+
+
 </body>
 
 </html>

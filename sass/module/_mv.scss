@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/mv.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/common/mv.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq(md) {
+      height: rem(600);
+  }
+}
+
+.mv-nner {
+  height: inherit;
+  @include mq(md) {
+      padding: 0 rem(50)
+  }
+  // padding: 0 rem(184);
+}
+
+.mv-content {
+  height: inherit;
+  display: grid;
+  place-content: center;
+
+}
+
+.mv-title {
+  text-transform: uppercase;
+  font-family: $font-family-en;
+  font-size: rem(160);
+  font-size: rclamp(90, 160, 1500, 1920);
+  font-weight: $bold;
+  line-height: 1.2;
+  text-align: center;
+  border-bottom: 5px solid #fff;
+  color: #fff;
+  padding-bottom: calc(50 / 1920 * 100%);
+  @include mq(md) {
+      font-size: rem(100);
+      font-size: rclamp(16, 70, 320, 767);
+      border-bottom: 2px solid #fff;
+
+  }
+}
+
+.mv-title span {
+  color: $yellow;
+  font-size: rem(75);
+  font-size: rclamp(50, 75, 1500, 1920);
+  display: block;
+  @include mq(md) {
+    font-size: rclamp(16, 40, 320, 767);
+
+  }
+
+}
+
+.mv-text {
+  margin-top: rem(70);
+  margin-top: calc(70 / 1920 * 100%);
+  font-size: rem(40);
+  font-size: rclamp(27, 40, 1500, 1920);
+  font-family: $font-family-base;
+  font-weight: $bold;
+  text-align: center;
+  color: #fff;
+  @include mq(md) {
+    font-size: rclamp(16, 30, 320, 767);
+  }
+}
+
+.mv-img {
+  position: relative;
+  z-index: -1;
+}
+
+.mv-img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.25);
+}
+
+.mv-img img {
+  height: 100vh;
+  object-fit: cover;
+  @include mq(md) {
+    height: rem(500);  
+  }
+  
+}
+

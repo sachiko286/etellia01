@@ -1,0 +1,99 @@
+@use "../global" as *;
+
+.service {
+  background: #FFFBE6;
+  position: relative;
+  padding-top: rem(120);
+  padding-bottom: rem(120);
+}
+
+.service-img-first {
+  margin-top: rem(67);
+  display: flex;
+  justify-content: center;
+  gap: rem(75);
+  @include mq(md) {
+      flex-direction: column;
+  }
+}
+
+
+.service-img-item  {
+  // display: block;
+  // max-width: rem(350);
+  // width: 100%;
+  // aspect-ratio: 1 /1 ;
+  // transition: 0.3s;
+  // position: relative;
+  // @include mq(lg) {
+  //     max-width: rem(280);
+  // }
+}
+
+.service-img-link  {
+  display: block;
+  max-width: rem(350);
+  width: 100%;
+  aspect-ratio: 1 /1 ;
+  transition: 0.3s;
+  position: relative;
+  @include mq(lg) {
+      max-width: rem(280);
+  }
+}
+
+.service-img-item img {
+  aspect-ratio: 1 /1 ;
+  border-radius: 50%;
+  object-fit: cover;
+  // clip-path: circle(50% at 50% 50%);
+  @include mq(md) {
+      aspect-ratio: 3 / 2;
+  }
+
+}
+
+.service-img-mask {
+  max-width: rem(350);
+  width: 100%;
+  aspect-ratio: 1 /1 ;
+  background: $yellow;
+  border-radius: 50%;
+  font-size: rem(48);
+  text-align: center;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.service-img-mask::after {
+  content: "";
+  display: block;
+  width: rem(100);
+  height: rem(3);
+  background: $black;
+  margin-inline: auto;
+  margin-top: rem(25);
+}
+
+.service-img-item:hover .service-img-mask {
+  opacity: 1;
+}
+.service-img-second {
+  margin-top: rem(75);
+  display: flex;
+  justify-content: center;
+  gap: rem(75);
+  @include mq(lg) {
+      margin-top: rem(60);
+  }
+}
+
+.service-button {
+  margin-top: rem(75);
+  text-align: center;
+}
+

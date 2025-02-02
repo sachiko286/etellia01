@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.main {
+  margin-left: rem(100);
+  @include mq(md) {
+      margin-left: rem(0);
+  }
+
+}

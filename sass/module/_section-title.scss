@@ -1,0 +1,52 @@
+@use "../global" as *;
+
+.section-title-en-right {
+  text-transform: uppercase;
+  color: #E8E8E8;
+  font-size: rem(150);
+  font-size: rclamp(100, 150, 1500, 1920);
+  font-weight: $bold;
+  writing-mode: vertical-lr;
+  font-family: $font-family-en;
+  position: absolute;
+  top: rem(120);
+  right: rclamp(0, 68, 1600, 1920);
+  @include mq(xl) {
+    writing-mode: horizontal-tb;
+    position: static;
+  }
+}
+
+.section-title-en-left {
+  text-transform: uppercase;
+  color: #E8E8E8;
+  font-size: rem(150);
+  font-size: rclamp(80, 150, 1500, 1920);
+  font-weight: $bold;
+  writing-mode: vertical-lr;
+  font-family: $font-family-en;
+  position: absolute;
+  top: rem(120);
+  left: rclamp(0, 68, 1600, 1920);
+  @include mq(xl) {
+    writing-mode: horizontal-tb;
+    position: static;
+  }
+}
+
+.section-title-en-right span,
+.section-title-en-left span
+ {
+  color: rgb(225, 214, 0, 0.25);
+}
+
+.section-title-ja {
+  font-size: rem(70);
+  font-size: rclamp(50, 70, 1500, 1920);
+  font-family: $font-family-base;
+  font-weight: $bold;
+  color: $yellow;
+  @include mq(md) {
+      font-size: rclamp(30, 60, 375, 767);
+  }
+} 
