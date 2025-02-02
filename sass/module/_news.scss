@@ -1,0 +1,60 @@
+@use "../global" as *;
+
+.news {
+  padding-top: rem(120);
+  position: relative;
+}
+
+.news-list {
+  margin-top: rem(47);
+}
+
+.news-list-item  {
+  border-bottom: 1px solid #000;
+}
+
+.news-list-item a {
+  padding: rem(20) 0;
+  display: block;
+  }
+
+.news-list-meta {
+  display: flex;
+  align-items: center;
+  
+}
+
+.news-list-date {
+  font-size: rem(19.2);
+  font-weight: $bold;
+  font-family: $font-family-en;
+  color: #C5C0C0;
+  margin-left: rem(20);
+}
+
+.news-list-category {
+  padding: rem(5);
+  min-width: rem(84);
+  width: fit-content;
+  font-size: rem(16);
+  color: #fff;
+  background-color: $yellow;
+  text-align: center;
+}
+
+.news-list-date span {
+  color: $yellow;
+}
+
+
+
+.news-list-title {
+  margin-top: rem(20);
+  font-size: rem(24);
+  font-weight: $bold;
+}
+
+.news-button {
+  text-align: center;
+  margin-top: rem(75);
+}

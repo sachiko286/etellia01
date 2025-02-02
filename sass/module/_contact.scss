@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/common/contact.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: rem(150) 0 rem(153);
+}
+
+.contact-inner {
+  max-width: rem(1400);
+  padding: 0 rem(25);
+  margin-inline: auto;
+  color: #fff;
+}
+
+.contact-title {
+  font-size: rclamp(60, 70, 1500, 1920);
+  font-weight: $bold;
+  text-align: center;
+  @include mq(md) {
+      font-size: rem(40);
+  }
+  
+}
+
+.contact-text {
+  margin-top: rem(67);
+  font-size: rem(24);
+  font-weight: $bold;
+  text-align: center;
+  @include mq(lg) {
+      margin-top: rem(40);
+  } 
+}
+
+.contact-button-content {
+  margin-top: rem(59);
+  display: flex;
+  gap: rem(100);
+  @include mq(sm) {
+      flex-direction: column;
+      gap: rem(60);
+  }
+
+}
+
+.contact-button {
+  display: block;
+  padding: rem(20) 0;
+  max-width: rem(650);
+  width: 100%;
+  border: 2px solid #fff;
+  font-size: rem(24);
+  font-weight: $bold;
+  text-align: center;
+  transition: 0.3s;
+  @include mq(sm) {
+      margin-inline: auto;
+      max-width: rem(400);
+  } 
+}
+
+.contact-button:hover {
+  background: $black;
+  
+
+}
+
+.contact-button-tel {
+}
+

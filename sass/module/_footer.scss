@@ -1,0 +1,99 @@
+@use "../global" as *;
+
+.footer {
+  position: relative;
+}
+
+.footer-inner {}
+
+.footer-access {}
+
+.footer-access-title .section-title-en-right {
+  color: #6C6969;
+
+  @include mq(xl) {
+    position: absolute;
+    writing-mode: vertical-lr;
+  }
+  @include mq(md) {
+      top: rem(80);
+  }
+}
+
+.footer-access-title .section-title-en-right span {
+  color: $yellow;
+}
+
+.section-title {}
+
+.section-title-en-left {}
+
+.footer-map iframe {
+  width: 100%;
+  height: rem(800);
+  @include mq(md) {
+      height: rem(500);
+  }
+}
+
+.footer-adress {
+  padding: rem(120) 0 rem(124);
+  background: $black;
+  color: #fff;
+}
+
+.footer-adress-inner {
+  max-width: rem(1400);
+  padding: 0 rem(25);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  @include mq(lg) {
+      flex-direction: column;
+  }
+
+}
+
+.footer-adress-content {}
+
+.footer-adress-name {
+  font-size: rem(50);
+  font-weight: $bold;
+}
+
+.footer-adress-body {
+  margin-top: rem(42);
+  display: block;
+}
+
+
+.footer-adress-post {
+  font-size: rem(24);
+  font-weight: $bold;
+}
+
+.footer-adress-text {
+  font-size: rem(28);
+  font-weight: $bold;
+}
+
+.footer-adress-tel {
+  margin-top: rem(17);
+  font-size: rem(36);
+  font-weight: $bold;
+}
+
+.footer-adress-tel span {
+  font-size: rem(24);
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  font-size: rem(16);
+  font-weight: $regular;
+  margin-top: auto;
+  @include mq(lg) {
+      margin-top: rem(60);
+      text-align: center;
+  }
+}

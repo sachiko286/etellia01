@@ -3,7 +3,6 @@
 .mv {
   position: relative;
   height: 100vh;
-  background-image: url(../images/common/mv.webp);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/common/mv.webp);
   background-position: center;
   background-size: cover;
@@ -39,6 +38,9 @@
   border-bottom: 5px solid #fff;
   color: #fff;
   padding-bottom: calc(50 / 1920 * 100%);
+  @include mq(lg) {
+    border-bottom: 3px solid #fff;
+  }
   @include mq(md) {
       font-size: rem(100);
       font-size: rclamp(16, 70, 320, 767);
@@ -61,15 +63,18 @@
 
 .mv-text {
   margin-top: rem(70);
-  margin-top: calc(70 / 1920 * 100%);
   font-size: rem(40);
   font-size: rclamp(27, 40, 1500, 1920);
   font-family: $font-family-base;
   font-weight: $bold;
   text-align: center;
   color: #fff;
+  @include mq(lg) {
+      margin-top: rem(50);
+  }
   @include mq(md) {
     font-size: rclamp(16, 30, 320, 767);
+    margin-top: rem(20);
   }
 }
 
