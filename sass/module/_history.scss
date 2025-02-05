@@ -1,0 +1,129 @@
+@use "../global" as *;
+
+.history {
+  padding: rem(120) 0;
+  position: relative;
+
+}
+
+.history-inner {
+  @include mq(xl) {
+      max-width: rem(1575);
+  }
+
+}
+
+.history-title {
+
+}
+.history-wrapper {
+max-width: rem(1450);
+padding: 0 rem(25);
+margin-inline: auto;
+margin-top: rem(67);
+}
+
+.history-list {
+  // max-width: rem(1400);
+  // margin-top: rem(67);
+  // position: relative;
+  margin-left: rem(96);
+  // padding-left: rem(96);
+  // margin-inline: auto;
+  @include mq(xl) {
+      // margin-left: rem(50);
+       position: relative;
+  }
+}
+
+.history-list::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - rem(700));
+  width: rem(4);
+  height: 95%;
+  background: $yellow;
+  top: rem(0);
+  z-index: 1;
+  @include mq(xl) {
+      left: rem(60);
+  }
+}
+
+
+.history-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: rem(24);
+  font-weight: $bold;
+}
+
+.history-list-item:nth-of-type(2),
+.history-list-item:nth-of-type(10),
+.history-list-item:nth-of-type(12)  {
+  margin-top: rem(50);
+}
+
+.history-list-item:nth-of-type(3),
+.history-list-item:nth-of-type(13)  {
+  margin-top: rem(20);
+}
+
+.history-list-item:nth-of-type(4),
+.history-list-item:nth-of-type(6), 
+.history-list-item:nth-of-type(8) {
+  margin-top: rem(100);
+}
+
+.history-list-item:nth-of-type(5),
+.history-list-item:nth-of-type(11)  {
+  margin-top: rem(30);
+}
+
+.history-list-item:nth-of-type(7) {
+  margin-top: rem(70);
+}
+
+.history-list-item:nth-of-type(9) {
+  margin-top: rem(80);
+}
+
+.history-list-item:nth-of-type(2) {
+  margin-top: rem(50);
+}
+
+
+
+
+.history-list-term {
+  // width: 15%;
+  font-size: rem(24);
+  font-weight: $bold;
+  position: relative;
+}
+
+.history-list-term::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: rem(-100);
+  width: rem(15);
+  height: rem(15);
+  border-radius: 50%;
+  background: $black;
+}
+
+.history-list-term::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(-100);
+  width: rem(100);
+  height: rem(1);
+  background: $black;
+}
+
+.history-list-description {
+  margin-left: rem(30);
+}

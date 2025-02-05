@@ -6,7 +6,13 @@
 
 .footer-inner {}
 
-.footer-access {}
+.footer-access {
+  position: relative;
+}
+
+.footer-accsec-body {
+  font-style:normal;
+}
 
 .footer-access-title .section-title-en-right {
   color: #6C6969;
@@ -23,10 +29,6 @@
 .footer-access-title .section-title-en-right span {
   color: $yellow;
 }
-
-.section-title {}
-
-.section-title-en-left {}
 
 .footer-map iframe {
   width: 100%;
@@ -51,21 +53,23 @@
   @include mq(lg) {
       flex-direction: column;
   }
-
 }
 
-.footer-adress-content {}
+.footer-adress-content {
+  @include mq(md) {
+      margin-inline: auto;
+  }
+}
+.footer-adress-body {
+  margin-top: rem(42);
+  display: block;
+  font-style:normal;
+}
 
 .footer-adress-name {
   font-size: rem(50);
   font-weight: $bold;
 }
-
-.footer-adress-body {
-  margin-top: rem(42);
-  display: block;
-}
-
 
 .footer-adress-post {
   font-size: rem(24);
@@ -95,5 +99,11 @@
   @include mq(lg) {
       margin-top: rem(60);
       text-align: center;
+  }
+}
+
+.footer-adress-mark {
+  @include mq(md) {
+      display: none;;
   }
 }

@@ -4,7 +4,7 @@
   text-transform: uppercase;
   color: #E8E8E8;
   font-size: rem(150);
-  font-size: rclamp(100, 150, 1500, 1920);
+  font-size: rclamp(80, 150, 1500, 1920);
   font-weight: $bold;
   writing-mode: vertical-lr;
   font-family: $font-family-en;
@@ -20,7 +20,6 @@
 .section-title-en-left {
   text-transform: uppercase;
   color: #E8E8E8;
-  font-size: rem(150);
   font-size: rclamp(80, 150, 1500, 1920);
   font-weight: $bold;
   writing-mode: vertical-lr;
@@ -37,7 +36,7 @@
 .section-title-en-right span,
 .section-title-en-left span
  {
-  color: rgb(225, 214, 0, 0.25);
+  color: rgba($color: #FFD600, $alpha: 0.25);
 }
 
 .section-title-ja {

@@ -46,7 +46,7 @@
   transition: all .3s ease-in-out;
   -webkit-transform: translateX(-85%) translateY(-27%) rotate(45deg);
   transform: translateX(-85%) translateY(-27%) rotate(45deg);
-  @include mq(md) {
+  @include mq(lg) {
     -webkit-transform: translateX(-94%) translateY(-27%) rotate(45deg);
   transform: translateX(-94%) translateY(-27%) rotate(45deg);
       

@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.overview {
+  padding: rem(120) 0;
+  background: #FFFBE6;
+  position: relative;
+  @include mq(md) {
+    padding-top: rem(70);
+    padding-bottom: rem(100);
+}
+}
+
+.overview-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
+  @include mq(md) {
+      max-width: rem(1000);
+  }
+}
+
+
+.overview-profile {
+  margin-top: rem(42);
+}
+
+.overview-profile-list {
+  padding:  rem(25) 0;
+  display: flex;
+  font-size: rem(24);
+  font-weight: $bold;
+  border-bottom: 1px dotted $yellow;
+
+}
+
+.overview-profile-term {
+  max-width: rem(290);
+  width: 100%;
+  margin-left: rem(30);
+  flex-shrink: 0;
+  @include mq(xl) {
+      max-width: rem(200);
+  }
+  @include mq(md){
+      max-width: rem(140);
+  }
+}

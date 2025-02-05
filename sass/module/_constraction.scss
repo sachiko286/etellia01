@@ -1,0 +1,214 @@
+@use "../global" as *;
+
+.constraction {
+  padding: rem(120) 0;
+  position: relative;
+}
+
+.constraction::before {
+  content: "";
+  display: block;
+  ;
+  width: 100%;
+  height: rem(870);
+  background: #FFFBE6;
+  clip-path: polygon(0 72%, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  bottom: 0;
+}
+
+.constraction-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
+  @include mq(md) {
+      max-width: rem(1000);
+  }
+}
+
+.constraction-title .section-title-en-left {
+  @include mq(sm) {
+    font-size: rem(70);
+  }
+}
+
+.constraction-lists {
+  margin-top: rem(67);
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(20);
+}
+
+.constraction-list {
+  display: inline-block;
+  padding: rem(5) rem(25);
+  background: $black;
+  color: #fff;
+  border-radius: rem(50);
+  text-align: center;
+  font-size: rem(19.2);
+  font-weight: $bold;
+}
+
+.constraction-swiper {
+  margin-top: rem(48);
+}
+
+.constraction-slide {
+  display: flex;
+  justify-content: space-between;
+  @include mq(sm) {
+      flex-direction: column;
+  }
+}
+
+.swiper-slide img {
+  width: calc(800 / 1200 * 100%);
+  aspect-ratio: 800 / 500;
+  object-fit: cover;
+  margin-right: rem(-200);
+  @include mq(xl) {
+      margin-right: rem(-300);
+  }
+  @include mq(lg) {
+      width: 75%;
+  }
+  @include mq(sm) {
+      width: 100%;
+      margin-right: rem(0);
+  }
+}
+
+.constraction-body {
+  width: calc(600 / 1200 * 100%);
+  padding-left: rem(57);
+  padding-right: rem(50);
+  margin-top: rem(100);
+  background: rgba($color: #FFD600, $alpha: 0.7);
+  @include mq(xl) {
+      margin-top: rem(300);
+      padding: rem(20) rem(50);
+      display: grid;
+      align-items: center;
+  }
+  @include mq(md) {
+    padding: rem(20) rem(30);
+  }
+  @include mq(sm) {
+      margin-top: rem(0);
+      width: 100%;
+      padding: rem(20) rem(30);
+  }
+}
+
+.constraction-list.swiper-list {
+  margin-top: rem(127);
+  border-radius: 0;
+  @include mq(xl) {
+      margin-top: rem(0);
+  }
+  @include mq(sm) {
+      margin-top: rem(0);
+  }
+}
+
+.swiper-list {}
+
+.constraction-area {
+  margin-top: rem(7);
+  font-size: rem(20);
+  font-weight: $regular;
+}
+
+.constraction-subtitle {
+  font-size: rem(36);
+  font-weight: $bold;
+  @include mq(lg) {
+      font-size: rem(30);
+  }
+
+}
+
+.constraction-subtitle::after {
+  content: "";
+  display: block;
+  width: rem(250);
+  height: rem(3);
+  background: $black;
+  margin-top: rem(20);
+
+}
+
+.constraction-body-button {
+  margin-top: rem(54);
+  font-size: rem(19.2);
+  font-family: $font-family-en;
+  font-weight: $bold;
+  display: block;
+  text-align: right;
+  @include mq(lg) {
+      margin-top: rem(20);
+  }
+  @include mq(sm) {
+      margin-top: rem(20);
+  }
+}
+
+.constraction-body-button::after {
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  display: inline-block;
+  transform: rotate(45deg);
+  bottom: rem(8);
+  margin-left: rem(10);
+}
+
+.constraction-swiper-thumbnail {
+  margin-top: rem(50);
+
+}
+
+.constraction-slide-thumbnail {
+  cursor: pointer;
+
+}
+
+.constraction-slide-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  transition: 0.2s;
+}
+
+.constraction-slide-thumbnail.swiper-slide-thumb-active::before {
+  background-color: initial;
+}
+
+.constraction-slide-thumbnail img {
+  aspect-ratio: 262.5 / 200;
+  width: 100%;
+  object-fit: cover;
+}
+
+.constraction-button {
+  margin-top: rem(75);
+  text-align: center;
+}
+
+
+.constraction-swiper-thumbnail .swiper-scrollbar {
+  display: none;
+
+  @include mq(sm) {
+    display: block;
+    position: relative;
+    margin-top: rem(30);
+  }
+}

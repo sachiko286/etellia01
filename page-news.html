@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- 自動的に電話番号と認識してリンク化する機能を無効 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- ポートフォリオや学習の時 検索結果に出ないように設定 -->
+  <meta name="robots" content="noindex">
+  <!-- meta情報 -->
+  <title>株式会社ETELLIA工務店</title>
+  <meta name="description" content="ウェブページの概要や説明" />
+  <meta name="keywords" content="ウェブページの内容に関連するキーワード" />
+  <!-- ogp -->
+  <meta property="og:title" content="共有された際のページのタイトル" />
+  <meta property="og:type" content="ページの種類 例:website、article、videoなど">
+  <meta property="og:url" content="ページのURLを指定" />
+  <meta property="og:image" content="ページを共有した際に表示される画像のURL" />
+  <meta property="og:site_name" content="サイトの名前" />
+  <meta property="og:description" content="ページの説明" />
+  <!-- ファビコン -->
+  <link href="#" rel="icon" />
+  <!-- Googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- css -->
+  <link href="./css/styles.css" rel="stylesheet">
+  <!-- JavaScript jquery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- JavaScript inview -->
+  <script defer src="./js/jquery.inview.min.js"></script>
+  <!-- JavaScript swiper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- JavaScript original-->
+  <script defer src="./js/script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header layout-header">
+    <div class="header-inner">
+      <!-- <div class="header-hamburger">
+
+      </div> -->
+
+      <button class="header-hamburger js-hamburger">
+        <span class="header-hamburger-text">menu</span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
+      </button>
+
+      <nav class="header-nav">
+        <ul class="header-nav-items">
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-drawer js-drawer">
+        <nav class="header-drawer-nav">
+          <ul class="header-drawer-items">
+            <li class="header-drawer-item">
+              <a href="#">ホーム</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">会社概要</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">サービスについて</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">施工事例</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li>
+              <ul class="header-drawer-item-sns header-nav-items">
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-drawer-item header-drawer-item-tel">
+              <a href="tel:043-111-1234"><span>tel</span>043-111-1234</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- サブメインビュー -->
+    <section class="sub-mv">
+      <div class="sub-mv-inner">
+        <div class="sub-mv-content">
+          <h1 class="sub-mv-title">
+            当<span class="sub-mv-title-yellow">社</span>からのお知らせ
+            <span class="sub-mv-title-en">news</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section class="page-news">
+      <div class="page-news-inner inner">
+        <div class="news-title section-title">
+          <h2 class="section-title-en-right">
+            ne<span>W</span>&s
+          </h2>
+          <h3 class="section-title-ja">
+            当社からのお知らせ
+          </h3>
+        </div>
+        <ul class="news-list">
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2023.02.14</span></p>
+              </div>
+              <p class="news-list-title">バレンタインデーにチョコのお家を作りました！</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2023.01.11</span></p>
+              </div>
+              <p class="news-list-title">本社移転2周年パーティー開催のお知らせ</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.12.28</span></p>
+              </div>
+              <p class="news-list-title">年末のご挨拶</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.12.24</span></p>
+              </div>
+              <p class="news-list-title">クリスマスにケーキのお家を作りました！</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.12.15</span></p>
+              </div>
+              <p class="news-list-title">年末年始休暇のお知らせ</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">ブログ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.12.03</span></p>
+              </div>
+              <p class="news-list-title">2022年を振り返ってみました。</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.11.11</span></p>
+              </div>
+              <p class="news-list-title">ポッキーの日にポッキーのお家を作りました！</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">ブログ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.11.05</span></p>
+              </div>
+              <p class="news-list-title">今年も残すところあとわずか…</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2022.10.31</span></p>
+              </div>
+              <p class="news-list-title">ハロウィンにかぼちゃのお家を作りました！</p>
+            </a>
+          </li>
+          <li class="news-list-item">
+            <a href="#">
+              <div class="news-list-meta">
+                <p class="news-list-category">お知らせ</p>
+                <p class="news-list-date">Posted&nbsp;on&nbsp;<span>2023.01.04</span></p>
+              </div>
+              <p class="news-list-title">新年のご挨拶</p>
+            </a>
+          </li>
+        </ul>
+        <div class="pagenavi">
+          <div class="pagenavi-inner">
+            <!-- WP-PageNaviで出力される部分 ここから -->
+            <div class="wp-pagenavi" role="navigation">
+              <!-- <a class="previouspostslink" rel="prev" href="#"></a> -->
+              <div class="pagenavi-numbers">
+                <span class="current pagenavi-number">1</span>
+                <a class="pagenavi-number" href="#">2</a>
+                <a class="pagenavi-number" href="#">3</a>
+              </div>
+              <!-- <a class="nextpostslink" rel="next" href="#"></a> -->
+            </div>
+            <!-- WP-PageNaviで出力される部分 ここまで -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- お問い合わせ -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="contact">
+          <div class="contact-inner">
+            <h2 class="contact-title">
+              お問い合わせはこちらから
+            </h2>
+            <p class="contact-text">
+              簡単な質問からお見積もりまでお気軽にご相談ください。
+            </p>
+            <div class="contact-button-content">
+              <a href="#" class="contact-button">メールから問い合わせ</a>
+              <a href="#" class="contact-button">電話から問い合わせ</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-access">
+          <div class="footer-access-title section-title">
+            <h2 class="section-title-en-right">
+              ac<span>c</span>ess
+            </h2>
+          </div>
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.332621651371!2d140.04868077644716!3d35.644175772599205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022831b5e6a59fd%3A0x423a129c34df6a91!2z5bmV5by144OZ44Kk44OR44O844Kv44Of44OD44OJ44K544Kv44Ko44Ki44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1738515055343!5m2!1sja!2sjp"
+              width="1820" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="footer-adress">
+          <div class="footer-adress-inner">
+            <div class="footer-adress-content">
+              <p class="footer-adress-name">株式会社ETELLIA工務店</p>
+              <address class="footer-adress-body">
+                <p class="footer-adress-post">〒261-0014</p>
+                <p class="footer-adress-text"> 千葉県千葉市美浜区若葉3-1 <br class="u-mobile ">幕張ベイパークミッドスクエアタワー25F</p>
+                <p class="footer-adress-tel">
+                  <span>tel</span>043-111-1234&nbsp;<span class="footer-adress-mark">/</span>&nbsp;<br
+                    class="u-mobile "><span>fax</span>043-111-1235
+                </p>
+              </address>
+            </div>
+            <div class="footer-copy">
+              © 2023 株式会社ETELLIA工務店.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.page-news {
+  padding: rem(120) 0;
+  position: relative;
+}
+
+.page-news-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
+  @include mq(md) {
+      max-width: rem(1000);
+  }
+}

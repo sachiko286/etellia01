@@ -9,31 +9,20 @@
   padding-bottom: rem(170);
   position: relative;
   @include mq(md) {
-      padding-top: rem(60);
+      padding-top: rem(70);
+      padding-bottom: rem(150);
   }
 }
 
 .concept-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
   @include mq(md) {
-      width: fit-content;
+      max-width: rem(1000);
   }
 }
 
-.inner {
-}
-
-.concept-title {
-}
-
-.concept-title .section-title-en {
-  // position: absolute;
-  // top: rem(120);
-  // right: rclamp(0, 70, 1600, 1920);
-  // @include mq(xl) {
-  //     position: static;
-  // }
-  
-}
 
 .section-title-ja {
   line-height: 1.2;
@@ -44,7 +33,7 @@
   font-size: rem(24);
   font-weight: $bold;
   @include mq(md) {
-      margin-top: rem(40);
+      // margin-top: rem(40);
   }
 }
 
@@ -61,6 +50,7 @@
   right: rem(47.4);
   @include mq(md) {
       margin-left: rem(47.4);
+      max-width: 100%;
 
   }
 }

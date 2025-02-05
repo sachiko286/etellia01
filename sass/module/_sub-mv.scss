@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+.sub-mv {
+  height: rem(800);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/common/sub-mv.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq(md) {
+      height: rem(600);
+  }
+}
+
+.sub-mv-inner {
+  height: inherit;
+}
+
+.sub-mv-content {
+  height: inherit;
+  display: grid;
+  place-content: center;
+}
+
+.sub-mv-title {
+  font-size: rem(82);
+  font-weight: $bold;
+  color: #fff;
+  text-align: center;
+
+}
+
+.sub-mv-title-yellow {
+  color: $yellow;
+}
+
+.sub-mv-title-en {
+  display: block;
+  font-size: rem(48);
+  font-weight: $bold;
+  font-family: $font-family-en;
+  text-transform: uppercase;
+  margin-top: rem(30);
+}
+
+.sub-mv-title::after {
+  content: "";
+  display: block;;
+  width: rem(100);
+  height: rem(5);
+  background: #fff;
+  margin-inline: auto;
+  margin-top: rem(30);
+}
+

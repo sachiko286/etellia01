@@ -26,9 +26,7 @@
   <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- swiper css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <!-- css -->
@@ -52,14 +50,12 @@
       <!-- <div class="header-hamburger">
 
       </div> -->
-      <button class="header-hamburger js-hamburger">
 
-        <div class="header-hamburger-wrapper">
-          <p class="header-hamburger-text">menu</p>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <button class="header-hamburger js-hamburger">
+        <span class="header-hamburger-text">menu</span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
       </button>
 
       <nav class="header-nav">
@@ -131,9 +127,9 @@
                   </a>
                 </li>
               </ul>
+            </li>
             <li class="header-drawer-item header-drawer-item-tel">
               <a href="tel:043-111-1234"><span>tel</span>043-111-1234</a>
-            </li>
             </li>
           </ul>
         </nav>
@@ -144,7 +140,7 @@
   <main class="main">
     <!-- メインビュー -->
     <section class="mv">
-      <div class="mv-nner">
+      <div class="mv-inner">
         <div class="mv-content">
           <h1 class="mv-title">
             <span>always , all of us have</span>he soul of steel
@@ -160,38 +156,41 @@
     <!-- concept -->
     <section class="concept">
       <div class="concept-inner inner">
-        <h2 class="concept-title section-title">
-          <div class="section-title-en-right">
-            co<span>n</span>cept
+        <div class="concept-wrapper">
+          <div class="concept-title section-title">
+            <h2 class="section-title-en-right">
+              co<span>n</span>cept
+            </h2>
+            <h3 class="section-title-ja">
+              ETELLIA工務店について
+            </h3>
           </div>
-          <h3 class="section-title-ja">
-            ETELLIA工務店について
-          </h3>
-        </h2>
-        <div class="concept-text">
-          私たちETELLIA工務店は、技のプロフェッショナル集団です。<br>
-          新築一戸建ての注文住宅から大型ビルの施工まで幅広く行っております。<br><br>
-          お家を買うということは決して安い買い物ではございません。<br>
-          <span>『一生に一度の大きな買い物をいい思い出に』</span><br>
-          心からそう願う職人たちがあなたのお家づくりをサポートさせていただきます。
+          <p class="concept-text">
+            私たちETELLIA工務店は、技のプロフェッショナル集団です。<br>
+            新築一戸建ての注文住宅から大型ビルの施工まで幅広く行っております。<br><br>
+            お家を買うということは決して安い買い物ではございません。<br>
+            <span>『一生に一度の大きな買い物をいい思い出に』</span><br>
+            心からそう願う職人たちがあなたのお家づくりをサポートさせていただきます。
+          </p>
+          <div class="concept-img">
+            <img src="./images/common/concept.webp" alt="リビングの画像" loading="lazy" decoding="async">
+          </div>
         </div>
-        <div class="concept-img">
-          <img src="./images/common/concept.webp" alt="" width="" height="" loading="lazy" decoding="async">
-        </div>
+
       </div>
     </section>
 
     <!-- our service -->
     <section class="service">
       <div class="service-inner inner">
-        <h2 class="service-title section-title">
-          <div class="section-title-en-left">
+        <div class="service-title section-title">
+          <h2 class="section-title-en-left">
             ou<span>r</span>&nbsp;service
-          </div>
+          </h2>
           <h3 class="section-title-ja">
             当社サービスについて
           </h3>
-        </h2>
+        </div>
         <ul class="service-img-first">
           <li class="service-img-item">
             <a href="#" class="service-img-link">
@@ -263,14 +262,14 @@
     <!-- news -->
     <section class="news">
       <div class="news-inner inner">
-        <h2 class="newstitle section-title">
-          <div class="section-title-en-right">
+        <div class="newstitle section-title">
+          <h2 class="section-title-en-right">
             ne<span>W</span>&s
-          </div>
+          </h2>
           <h3 class="section-title-ja">
             当社からのお知らせ
           </h3>
-        </h2>
+        </div>
         <ul class="news-list">
           <li class="news-list-item">
             <a href="#">
@@ -308,18 +307,191 @@
       </div>
     </section>
 
-    <!-- お問い合わせ -->
-    <section class="contact">
-      <div class="contact-inner">
-        <h2 class="contact-title">
-          お問い合わせはこちらから
-        </h2>
-        <p class="contact-text">
-          簡単な質問からお見積もりまでお気軽にご相談ください。
-        </p>
-        <div class="contact-button-content">
-          <a href="#" class="contact-button">メールから問い合わせ</a>
-          <a href="#" class="contact-button">電話から問い合わせ</a>
+    <section class="constraction">
+      <div class="constraction-inner inner">
+        <div class="constraction-title section-title">
+          <h2 class="section-title-en-left">
+            co<span>n</span>straction
+          </h2>
+          <h3 class="section-title-ja">
+            施工事例
+          </h3>
+        </div>
+        <ul class="constraction-lists">
+          <li class="constraction-list">
+            <a href="#">注文住宅</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">新築</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">リノベーション</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">マンション</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">一戸建て</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">鉄筋コンクリート</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">プール</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">和モダン</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">西洋風</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">サウナ付き</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">DIY</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">ウッドデッキ</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">ブロック工事</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">外壁塗装</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">土間</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">堀ごたつ</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">アスファルト防水加工</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">3階建て</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">木造</a>
+          </li>
+          <li class="constraction-list">
+            <a href="#">階段</a>
+          </li>
+        </ul>
+        <div class="constraction-swiper">
+          <!-- <div class="swiper-main"> -->
+          <div class="swiper  js-swiper-main">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide constraction-slide">
+                <!-- スライドの中身 -->
+                <img src="./images/common/construction01.webp" alt="プール付き注文住宅の画像">
+                <div class="constraction-body">
+                  <div class="constraction-body-wrapper">
+                    <div class="constraction-list swiper-list">
+                      <a href="#">注文住宅</a>
+                    </div>
+                    <p class="constraction-area">
+                      千葉県千葉市花見川区
+                    </p>
+                    <h3 class="constraction-subtitle">
+                      2階建てプール付き注文住宅
+                    </h3>
+                    <a href="#" class="constraction-body-button">
+                      Read more
+                    </a>  
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide constraction-slide">
+                <!-- スライドの中身 -->
+                <img src="./images/common/construction02.webp" alt="新築一戸建て3階建ての画像">
+                <div class="constraction-body">
+                  <div class="constraction-body-wrapper">
+                    <div class="constraction-list swiper-list">
+                      <a href="#">注文住宅</a>
+                    </div>
+                    <p class="constraction-area">
+                      千葉県千葉市中央区
+                    </p>
+                    <h3 class="constraction-subtitle">
+                      新築一戸建て3階建て
+                    </h3>
+                    <a href="#" class="constraction-body-button">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide constraction-slide">
+                <!-- スライドの中身 -->
+                <img src="./images/common/construction03.webp" alt="全部屋フルリノベーションの画像">
+                <div class="constraction-body">
+                  <div class="constraction-body-wrapper">
+                    <div class="constraction-list swiper-list">
+                      <a href="#">リフォーム</a>
+                    </div>
+                    <p class="constraction-area">
+                      千葉県千葉県船橋市
+                    </p>
+                    <h3 class="constraction-subtitle">
+                      全部屋フルリノベーション
+                    </h3>
+                    <a href="#" class="constraction-body-button">
+                      Read more
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+              <li class="swiper-slide constraction-slide">
+                <!-- スライドの中身 -->
+                <img src="./images/common/construction04.webp" alt="一戸建てオール電化の画像">
+                <div class="constraction-body">
+                  <div class="constraction-body-wrapper">
+                    <div class="constraction-list swiper-list">
+                      <a href="#">オール電化工事</a>
+                    </div>
+                    <p class="constraction-area">
+                      千葉県千葉市緑区
+                    </p>
+                    <h3 class="constraction-subtitle">
+                      一戸建てオール電化
+                    </h3>
+                    <a href="#" class="constraction-body-button">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="constraction-swiper-thumbnail">
+          <div class="swiper js-swiper-thumbnail">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide constraction-slide-thumbnail">
+                <img src="./images/common/construction01.webp" alt="プール付き注文住宅の画像">
+              </li>
+              <li class="swiper-slide constraction-slide-thumbnail">
+                <img src="./images/common/construction02.webp" alt="新築一戸建て3階建ての画像">
+              </li>
+              <li class="swiper-slide constraction-slide-thumbnail">
+                <img src="./images/common/construction03.webp" alt="全部屋フルリノベーションの画像">
+              </li>
+              <li class="swiper-slide constraction-slide-thumbnail">
+                <img src="./images/common/construction04.jpg" alt="一戸建てオール電化の画像">
+              </li>
+            </ul>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          
+        </div>
+        <div class="constraction-button">
+          <a href="#" class="button-read">
+            <span>Read more</span>
+          </a>
         </div>
       </div>
     </section>
@@ -327,12 +499,26 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer-inner">
-        <div class="footer-access">
-          <h2 class="footer-access-title section-title">
-            <div class="section-title-en-right">
-              ac<span>c</span>ess
+        <div class="contact">
+          <div class="contact-inner">
+            <h2 class="contact-title">
+              お問い合わせはこちらから
+            </h2>
+            <p class="contact-text">
+              簡単な質問からお見積もりまでお気軽にご相談ください。
+            </p>
+            <div class="contact-button-content">
+              <a href="#" class="contact-button">メールから問い合わせ</a>
+              <a href="#" class="contact-button">電話から問い合わせ</a>
             </div>
-          </h2>
+          </div>
+        </div>
+        <div class="footer-access">
+          <div class="footer-access-title section-title">
+            <h2 class="section-title-en-right">
+              ac<span>c</span>ess
+            </h2>
+          </div>
           <div class="footer-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.332621651371!2d140.04868077644716!3d35.644175772599205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022831b5e6a59fd%3A0x423a129c34df6a91!2z5bmV5by144OZ44Kk44OR44O844Kv44Of44OD44OJ44K544Kv44Ko44Ki44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1738515055343!5m2!1sja!2sjp"
@@ -344,13 +530,14 @@
           <div class="footer-adress-inner">
             <div class="footer-adress-content">
               <p class="footer-adress-name">株式会社ETELLIA工務店</p>
-              <addres class="footer-adress-body">
+              <address class="footer-adress-body">
                 <p class="footer-adress-post">〒261-0014</p>
-                <p class="footer-adress-text"> 千葉県千葉市美浜区若葉3-1 幕張ベイパークミッドスクエアタワー25F</p>
+                <p class="footer-adress-text"> 千葉県千葉市美浜区若葉3-1 <br class="u-mobile ">幕張ベイパークミッドスクエアタワー25F</p>
                 <p class="footer-adress-tel">
-                  <span>tel</span>043-111-1234&nbsp;/&nbsp;<span>fax</span>043-111-1235
+                  <span>tel</span>043-111-1234&nbsp;<span class="footer-adress-mark">/</span>&nbsp;<br
+                    class="u-mobile "><span>fax</span>043-111-1235
                 </p>
-              </addres>
+              </address>
             </div>
             <div class="footer-copy">
               © 2023 株式会社ETELLIA工務店.
@@ -361,20 +548,6 @@
       </div>
     </footer>
 
-
-    <!-- <h2 class="section-title">
-      <div class="section-title-en-right">
-        co<span>n</span>cept
-      </div>
-    </h2>
-
-    <h3 class="section-title-ja">
-      当社からのお知らせ
-    </h3>
-
-    <a href="#" class="button-read">
-      <span>Read more</span>
-    </a> -->
 
   </main>
 

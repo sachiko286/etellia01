@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- 自動的に電話番号と認識してリンク化する機能を無効 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- ポートフォリオや学習の時 検索結果に出ないように設定 -->
+  <meta name="robots" content="noindex">
+  <!-- meta情報 -->
+  <title>株式会社ETELLIA工務店</title>
+  <meta name="description" content="ウェブページの概要や説明" />
+  <meta name="keywords" content="ウェブページの内容に関連するキーワード" />
+  <!-- ogp -->
+  <meta property="og:title" content="共有された際のページのタイトル" />
+  <meta property="og:type" content="ページの種類 例:website、article、videoなど">
+  <meta property="og:url" content="ページのURLを指定" />
+  <meta property="og:image" content="ページを共有した際に表示される画像のURL" />
+  <meta property="og:site_name" content="サイトの名前" />
+  <meta property="og:description" content="ページの説明" />
+  <!-- ファビコン -->
+  <link href="#" rel="icon" />
+  <!-- Googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- css -->
+  <link href="./css/styles.css" rel="stylesheet">
+  <!-- JavaScript jquery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- JavaScript inview -->
+  <script defer src="./js/jquery.inview.min.js"></script>
+  <!-- JavaScript swiper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- JavaScript original-->
+  <script defer src="./js/script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header layout-header">
+    <div class="header-inner">
+      <!-- <div class="header-hamburger">
+
+      </div> -->
+
+      <button class="header-hamburger js-hamburger">
+        <span class="header-hamburger-text">menu</span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
+        <span class="header-hamburger-bar"></span>
+      </button>
+
+      <nav class="header-nav">
+        <ul class="header-nav-items">
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#">
+              <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-drawer js-drawer">
+        <nav class="header-drawer-nav">
+          <ul class="header-drawer-items">
+            <li class="header-drawer-item">
+              <a href="#">ホーム</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">会社概要</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">サービスについて</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">お知らせ</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">施工事例</a>
+            </li>
+            <li class="header-drawer-item">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li>
+              <ul class="header-drawer-item-sns header-nav-items">
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-insta01.svg" alt="instagramのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-x01.svg" alt="xのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-facebook01.svg" alt="facebookのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">
+                    <img src="./images/common/sns-youtube01.svg" alt="youtubeのアイコン" loading="lazy" decoding="async">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-drawer-item header-drawer-item-tel">
+              <a href="tel:043-111-1234"><span>tel</span>043-111-1234</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    
+    <!-- サブメインビュー -->
+    <section class="sub-mv">
+      <div class="sub-mv-inner">
+        <div class="sub-mv-content">
+          <h1 class="sub-mv-title">
+            会<span class="sub-mv-title-yellow">社</span>概要
+            <span class="sub-mv-title-en">overview</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- greeting -->
+    <section class="greeting">
+      <div class="greeting-inner inner">
+        <div class="greeting-title section-title">
+          <h2 class="section-title-en-right">
+            gr<span>e</span>eting
+          </h2>
+          <h3 class="section-title-ja">
+            ごあいさつ
+          </h3>
+        </div>
+        <p class="greeting-text">
+          当社のホームページにお越しいただき、ありがとうございます。<br>
+          ETELLIA工務店は、1945年に創業以来、地域の発展とともに歩んで参りました。<br>
+          戦争や不況、自然災害など、様々な困難に直面しながらも、<br>
+          私たちは常にお客様のニーズに応えるために全力を尽くしてまいりました。<br><br>
+          当社が誕生した時代は、日本の産業が急速に発展し、建築業界も大きな変革期を迎えていました。<br>
+          私たちは、先進的な技術と伝統的な職人技を融合させ、数々の建築プロジェクトに携わってまいりました。<br><br>
+          現在では、社会情勢やお客様のニーズが変化し、より高度な技術やサービスが求められる時代になりました。<br>
+          しかし、私たちは常に変化に対応する柔軟性とお客様に信頼されるサービスの提供にこだわり続けて参ります。<br><br>
+          今後も、お客様のニーズに合わせた最適な提案と高品質な工事の実現に取り組み、地域貢献してまいります。<br>
+          何卒、ご支援とご愛顧を賜りますようお願い申し上げます。<br>
+        </p>
+        <div class="greeting-sign">
+          <p class="greeting-post">
+            3代目代表取締役
+          </p>
+          <p class="greeting-name">
+            兵頭&nbsp;源三郎
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- overview -->
+    <section class="overview">
+      <div class="overview-inner inner">
+        <div class="overview-title section-title">
+          <h2 class="section-title-en-left">
+            ov<span>e</span>rview
+          </h2>
+          <h3 class="section-title-ja">
+            会社概要
+          </h3>
+        </div>
+        <div class="overview-profile">
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">会社名</dt>
+            <dd class="overview-profile-description">株式会社ETELLIA工務店</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">所在地</dt>
+            <dd class="overview-profile-description">〒261-0014<br>
+              千葉県千葉市美浜区若葉3-1<br class="u-mobile">幕張ベイパークミッドスクエアタワー25F</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">電話番号</dt>
+            <dd class="overview-profile-description">043-111-1234</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">FAX番号</dt>
+            <dd class="overview-profile-description">043-111-1235</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">設立</dt>
+            <dd class="overview-profile-description">1945年9月1日</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">資本金</dt>
+            <dd class="overview-profile-description">50,000,000円</dd>
+          </dl>
+          <dl class="overview-profile-list">
+            <dt class="overview-profile-term">取引銀行</dt>
+            <dd class="overview-profile-description">
+              千葉銀行 幕張新都心支店<br>三井住友銀行 海浜幕張支店<br>みずほ銀行 稲毛支店
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- history -->
+    <section class="history">
+      <div class="history-inner inner">
+        <div class="history-title section-title">
+          <h2 class="section-title-en-right">
+            hi<span>s</span>tory
+          </h2>
+          <h3 class="section-title-ja">
+            沿革
+          </h3>
+        </div>
+      </div>
+      <div class="history-wrapper inner">
+        <dl class="history-list">
+          <div class="history-list-item">
+            <dt class="history-list-term">1945年</dt>
+            <dd class="history-list-description">
+              兵頭工務店を創業
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1950年</dt>
+            <dd class="history-list-description">
+              株式会社兵頭工務店へ法人化<br>
+              創業主である兵頭源一郎が初代社長に就任
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1952年</dt>
+            <dd class="history-list-description">
+              資本金を3,000,000円に増資
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1965年</dt>
+            <dd class="history-list-description">
+              資本金を10,000,000円に増資
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1968年</dt>
+            <dd class="history-list-description">
+              兵頭源二郎が2代目社長に就任
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1981年</dt>
+            <dd class="history-list-description">
+              資本金を20,000,000円に増資
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">1989年</dt>
+            <dd class="history-list-description">
+              資本金を30,000,000円に増資
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2000年</dt>
+            <dd class="history-list-description">
+              海外展開に向けて『株式会社ETELLIA工務店』に社名変更
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2008年</dt>
+            <dd class="history-list-description">
+              兵頭源三郎が3代目社長に就任
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2013年</dt>
+            <dd class="history-list-description">
+              ETELLIA Exterior株式会社の100％子会社化
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2016年</dt>
+            <dd class="history-list-description">
+              資本金を50,000,000円に増資
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2021年</dt>
+            <dd class="history-list-description">
+              本社を幕張ベイパークミッドスクエアタワーへと移転
+            </dd>
+          </div>
+          <div class="history-list-item">
+            <dt class="history-list-term">2023年</dt>
+            <dd class="history-list-description">
+              現在
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+
+    </section>
+
+
+    <!-- お問い合わせ -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="contact">
+          <div class="contact-inner">
+            <h2 class="contact-title">
+              お問い合わせはこちらから
+            </h2>
+            <p class="contact-text">
+              簡単な質問からお見積もりまでお気軽にご相談ください。
+            </p>
+            <div class="contact-button-content">
+              <a href="#" class="contact-button">メールから問い合わせ</a>
+              <a href="#" class="contact-button">電話から問い合わせ</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-access">
+          <div class="footer-access-title section-title">
+            <h2 class="section-title-en-right">
+              ac<span>c</span>ess
+            </h2>
+          </div>
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.332621651371!2d140.04868077644716!3d35.644175772599205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022831b5e6a59fd%3A0x423a129c34df6a91!2z5bmV5by144OZ44Kk44OR44O844Kv44Of44OD44OJ44K544Kv44Ko44Ki44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1738515055343!5m2!1sja!2sjp"
+              width="1820" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="footer-adress">
+          <div class="footer-adress-inner">
+            <div class="footer-adress-content">
+              <p class="footer-adress-name">株式会社ETELLIA工務店</p>
+              <address class="footer-adress-body">
+                <p class="footer-adress-post">〒261-0014</p>
+                <p class="footer-adress-text"> 千葉県千葉市美浜区若葉3-1 <br class="u-mobile ">幕張ベイパークミッドスクエアタワー25F</p>
+                <p class="footer-adress-tel">
+                  <span>tel</span>043-111-1234&nbsp;<span class="footer-adress-mark">/</span>&nbsp;<br
+                    class="u-mobile "><span>fax</span>043-111-1235
+                </p>
+              </address>
+            </div>
+            <div class="footer-copy">
+              © 2023 株式会社ETELLIA工務店.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+
+</body>
+
+</html>

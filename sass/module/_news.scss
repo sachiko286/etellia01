@@ -3,6 +3,17 @@
 .news {
   padding-top: rem(120);
   position: relative;
+  @include mq(md) {
+      padding-top: rem(70);
+  }
+}
+.news-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
+  @include mq(md) {
+    max-width: rem(1000);
+}
 }
 
 .news-list {

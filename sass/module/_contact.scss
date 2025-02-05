@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/common/contact.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/common/contact.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +13,11 @@
   padding: 0 rem(25);
   margin-inline: auto;
   color: #fff;
+  @include mq(md) {
+    @include mq(md) {
+      max-width: rem(1000);
+  }
+  }
 }
 
 .contact-title {

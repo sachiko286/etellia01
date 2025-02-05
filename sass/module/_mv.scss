@@ -1,9 +1,8 @@
 @use "../global" as *;
 
 .mv {
-  position: relative;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/common/mv.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/common/mv.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +11,7 @@
   }
 }
 
-.mv-nner {
+.mv-inner {
   height: inherit;
   @include mq(md) {
       padding: 0 rem(50)
@@ -76,27 +75,5 @@
     font-size: rclamp(16, 30, 320, 767);
     margin-top: rem(20);
   }
-}
-
-.mv-img {
-  position: relative;
-  z-index: -1;
-}
-
-.mv-img::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba($color: #000000, $alpha: 0.25);
-}
-
-.mv-img img {
-  height: 100vh;
-  object-fit: cover;
-  @include mq(md) {
-    height: rem(500);  
-  }
-  
 }
 

@@ -1,0 +1,60 @@
+@use "../global" as *;
+
+.greeting {
+  position: relative;
+  padding-top: rem(120);
+  padding-bottom: rem(139);
+  @include mq(md) {
+      padding-top: rem(70);
+      padding-bottom: rem(100);
+  }
+}
+
+.greeting-inner {
+  @include mq(xl) {
+      max-width: rem(1575);
+  }
+  @include mq(md) {
+      max-width: rem(1000);
+  }
+}
+
+.inner {
+}
+
+.greeting-title {
+}
+
+.section-title {
+}
+
+.section-title-en-right {
+}
+
+.section-title-ja {
+}
+
+.greeting-text {
+  margin-top: rem(67);
+  font-size: rem(24);
+  font-weight: $bold;
+}
+
+.greeting-sign {
+  margin-top: rem(42);
+  margin-left: auto;
+  width: fit-content;
+}
+
+.greeting-post {
+  font-size: rem(24);
+  font-weight: $bold;
+  font-family: $font-family-sec;
+}
+
+.greeting-name {
+  font-size: rem(48);
+  font-weight: $bold;
+  font-family: $font-family-sec;
+}
+
