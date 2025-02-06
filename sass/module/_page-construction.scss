@@ -1,0 +1,155 @@
+@use "../global" as *;
+
+.page-construction {}
+
+.page-construction.construction::before {
+  display: none;
+}
+
+.page-construction-inner {
+  @include mq(sm) {
+    max-width: rem(800);
+
+  }
+  }
+
+
+.page-construction-title .section-title-en-left {
+  @include mq(sm) {
+      font-size: rclamp(35, 70, 319, 600);
+  }
+}
+
+
+.page-construction-lists.construction-lists {
+  margin-top: rem(55);
+}
+
+.page-construction-tabs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: rem(50);
+  place-content: center;
+  font-size: rem(19.2);
+  margin-top: rem(55);
+  @include mq(sm) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: rem(20);
+  }
+
+}
+
+.page-construction-tab {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.page-construction-tab.is-active {
+  color: $yellow;
+}
+
+.page-construction-tab:hover {
+  color: $yellow;
+}
+
+
+.page-construction-tab {
+  border-right: 2px solid #D1D1D1;
+}
+
+.page-construction-tab:last-child {
+  border-right: none
+}
+
+
+.page-construction-tab:nth-child(3) {
+  @include mq(sm) {
+    border-right: none
+  }
+
+}
+
+.page-construction-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  //(列数(数値のみ), calc((100% - 縦の間隔(gapと同じ。例:3rem)) / 列数と同じ値)
+  gap: rem(100);
+  margin-top: rem(55);
+  @include mq(lg) {
+      gap: rem(60);
+  }
+  @include mq(md) {
+      gap: rem(40);
+  }
+  @include mq(sm) {
+    grid-template-columns:auto;
+
+  }
+}
+
+.page-construction-item {
+  position: relative;
+}
+
+.page-construction-content-img {}
+
+.page-construction-content-img img {
+  aspect-ratio: 550 / 350;
+  object-fit: cover;
+}
+
+.page-construction-category {
+  font-size: rem(19.2);
+  padding: rem(5) rem(25);
+  background: $yellow;
+  display: inline-block;
+  position: absolute;
+  top: rem(50);
+  left: 0;
+
+}
+
+.page-construction-text {
+  background: rgba($color: #FFD600, $alpha: 0.7);
+  padding: rem(30);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0; /* 初期状態は透明 */
+  clip-path: inset(100% 0 0 0); /* 下から隠す */
+  transition: clip-path 0.3s ease-out, opacity 0.3s ease-out;
+  @include mq(lg) {
+      opacity: 1;
+      clip-path: inset(0 0 0 0); /* 全体を表示 */
+      padding: rem(20)
+
+  }
+}
+
+.page-construction-item:hover .page-construction-text  {
+  opacity: 1;
+  clip-path: inset(0 0 0 0); /* 全体を表示 */
+}
+
+.page-construction-subtitle {
+  font-size: rem(24);
+  @include mq(lg) {
+      font-size: rem(20);
+  }
+}
+
+
+.page-construction-read.construction-body-button {
+  margin-top: rem(0);
+}
+
+
+
+.page-construction-pagenavi {
+  margin-top: rem(100);
+}
+
+

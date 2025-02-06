@@ -1,10 +1,7 @@
 @use "../global" as *;
 
 .pagenavi {
-  margin-top: rem(70);
-  // @include mq(md) {
-  //     padding-bottom: rem(3);
-  // }
+
 }
 
 
@@ -31,19 +28,16 @@ justify-content: center;
 
 .pagenavi .wp-pagenavi a,
 .pagenavi .wp-pagenavi span {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: grid;
+  place-content: center;
   height: rem(58);
   width: rem(54);
   font-size: rem(24);
-  font-weight: $bold;
   font-family: $font-family-en;
   color: $black;
   border: 3px solid $black;
   background-color: #fff;
   transition: .3s;
-  padding: rem(10) 0;
   @include mq(md) {
     border: 1px solid $black;
   }

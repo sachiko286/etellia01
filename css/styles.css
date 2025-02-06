@@ -59,7 +59,7 @@ html {
 }
 body {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #3A3838;
 }
 
@@ -415,7 +415,6 @@ select::-ms-expand {
   padding: 0.9375rem 0;
   display: inline-block;
   font-size: 2.25rem;
-  font-weight: 700;
   line-height: 1;
   color: #3A3838;
   text-align: center;
@@ -492,7 +491,6 @@ select::-ms-expand {
   font-family: "Raleway", serif;
   font-size: 10rem;
   font-size: clamp(5.625rem, -10rem + 16.6666666667vw, 10rem);
-  font-weight: 700;
   line-height: 1.2;
   text-align: center;
   border-bottom: 5px solid #fff;
@@ -528,8 +526,6 @@ select::-ms-expand {
   margin-top: 4.375rem;
   font-size: 2.5rem;
   font-size: clamp(1.6875rem, -1.2142857143rem + 3.0952380952vw, 2.5rem);
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
   text-align: center;
   color: #fff;
 }
@@ -550,7 +546,6 @@ select::-ms-expand {
   color: #E8E8E8;
   font-size: 9.375rem;
   font-size: clamp(5rem, -10.625rem + 16.6666666667vw, 9.375rem);
-  font-weight: 700;
   writing-mode: vertical-lr;
   font-family: "Raleway", serif;
   position: absolute;
@@ -568,7 +563,6 @@ select::-ms-expand {
   text-transform: uppercase;
   color: #E8E8E8;
   font-size: clamp(5rem, -10.625rem + 16.6666666667vw, 9.375rem);
-  font-weight: 700;
   writing-mode: vertical-lr;
   font-family: "Raleway", serif;
   position: absolute;
@@ -591,7 +585,6 @@ select::-ms-expand {
   font-size: 4.375rem;
   font-size: clamp(3.125rem, -1.3392857143rem + 4.7619047619vw, 4.375rem);
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
   color: #FFD600;
 }
 @media screen and (max-width: 767px) {
@@ -607,7 +600,6 @@ select::-ms-expand {
   width: 100%;
   padding: 1.25rem 0;
   font-size: 1.5rem;
-  font-weight: 700;
   font-family: "Raleway", serif;
   color: #F0F0F0;
   background: #3A3838;
@@ -685,7 +677,6 @@ select::-ms-expand {
 .concept-text {
   margin-top: 4.1875rem;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 .concept-text span {
   font-size: 2rem;
@@ -846,7 +837,6 @@ select::-ms-expand {
 
 .contact-title {
   font-size: clamp(3.75rem, 1.5178571429rem + 2.380952381vw, 4.375rem);
-  font-weight: 700;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
@@ -858,7 +848,6 @@ select::-ms-expand {
 .contact-text {
   margin-top: 4.1875rem;
   font-size: 1.5rem;
-  font-weight: 700;
   text-align: center;
 }
 @media screen and (max-width: 1023px) {
@@ -886,7 +875,6 @@ select::-ms-expand {
   width: 100%;
   border: 2px solid #fff;
   font-size: 1.5rem;
-  font-weight: 700;
   text-align: center;
   transition: 0.3s;
 }
@@ -942,7 +930,6 @@ select::-ms-expand {
 
 .news-list-date {
   font-size: 1.2rem;
-  font-weight: 700;
   font-family: "Raleway", serif;
   color: #C5C0C0;
   margin-left: 1.25rem;
@@ -966,7 +953,6 @@ select::-ms-expand {
 .news-list-title {
   margin-top: 1.25rem;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .news-button {
@@ -1048,23 +1034,19 @@ select::-ms-expand {
 
 .footer-adress-name {
   font-size: 3.125rem;
-  font-weight: 700;
 }
 
 .footer-adress-post {
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .footer-adress-text {
   font-size: 1.75rem;
-  font-weight: 700;
 }
 
 .footer-adress-tel {
   margin-top: 1.0625rem;
   font-size: 2.25rem;
-  font-weight: 700;
 }
 
 .footer-adress-tel span {
@@ -1090,12 +1072,12 @@ select::-ms-expand {
   }
 }
 
-.constraction {
+.construction {
   padding: 7.5rem 0;
   position: relative;
 }
 
-.constraction::before {
+.construction::before {
   content: "";
   display: block;
   width: 100%;
@@ -1108,30 +1090,30 @@ select::-ms-expand {
 }
 
 @media screen and (max-width: 1499px) {
-  .constraction-inner {
+  .construction-inner {
     max-width: 98.4375rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .constraction-inner {
+  .construction-inner {
     max-width: 62.5rem;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .constraction-title .section-title-en-left {
+  .construction-title .section-title-en-left {
     font-size: 4.375rem;
   }
 }
 
-.constraction-lists {
+.construction-lists {
   margin-top: 4.1875rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
 }
 
-.constraction-list {
+.construction-list {
   display: inline-block;
   padding: 0.3125rem 1.5625rem;
   background: #3A3838;
@@ -1139,19 +1121,18 @@ select::-ms-expand {
   border-radius: 3.125rem;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
-.constraction-swiper {
+.construction-swiper {
   margin-top: 3rem;
 }
 
-.constraction-slide {
+.construction-slide {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 599px) {
-  .constraction-slide {
+  .construction-slide {
     flex-direction: column;
   }
 }
@@ -1180,7 +1161,7 @@ select::-ms-expand {
   }
 }
 
-.constraction-body {
+.construction-body {
   width: 50%;
   padding-left: 3.5625rem;
   padding-right: 3.125rem;
@@ -1188,7 +1169,7 @@ select::-ms-expand {
   background: rgba(255, 214, 0, 0.7);
 }
 @media screen and (max-width: 1499px) {
-  .constraction-body {
+  .construction-body {
     margin-top: 18.75rem;
     padding: 1.25rem 3.125rem;
     display: grid;
@@ -1196,50 +1177,49 @@ select::-ms-expand {
   }
 }
 @media screen and (max-width: 767px) {
-  .constraction-body {
+  .construction-body {
     padding: 1.25rem 1.875rem;
   }
 }
 @media screen and (max-width: 599px) {
-  .constraction-body {
+  .construction-body {
     margin-top: 0rem;
     width: 100%;
     padding: 1.25rem 1.875rem;
   }
 }
 
-.constraction-list.swiper-list {
+.construction-list.swiper-list {
   margin-top: 7.9375rem;
   border-radius: 0;
 }
 @media screen and (max-width: 1499px) {
-  .constraction-list.swiper-list {
+  .construction-list.swiper-list {
     margin-top: 0rem;
   }
 }
 @media screen and (max-width: 599px) {
-  .constraction-list.swiper-list {
+  .construction-list.swiper-list {
     margin-top: 0rem;
   }
 }
 
-.constraction-area {
+.construction-area {
   margin-top: 0.4375rem;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.constraction-subtitle {
+.construction-subtitle {
   font-size: 2.25rem;
-  font-weight: 700;
 }
 @media screen and (max-width: 1023px) {
-  .constraction-subtitle {
+  .construction-subtitle {
     font-size: 1.875rem;
   }
 }
 
-.constraction-subtitle::after {
+.construction-subtitle::after {
   content: "";
   display: block;
   width: 15.625rem;
@@ -1248,26 +1228,25 @@ select::-ms-expand {
   margin-top: 1.25rem;
 }
 
-.constraction-body-button {
+.construction-body-button {
   margin-top: 3.375rem;
   font-size: 1.2rem;
   font-family: "Raleway", serif;
-  font-weight: 700;
   display: block;
   text-align: right;
 }
 @media screen and (max-width: 1023px) {
-  .constraction-body-button {
+  .construction-body-button {
     margin-top: 1.25rem;
   }
 }
 @media screen and (max-width: 599px) {
-  .constraction-body-button {
+  .construction-body-button {
     margin-top: 1.25rem;
   }
 }
 
-.constraction-body-button::after {
+.construction-body-button::after {
   content: "";
   width: 0.5rem;
   height: 0.5rem;
@@ -1279,15 +1258,15 @@ select::-ms-expand {
   margin-left: 0.625rem;
 }
 
-.constraction-swiper-thumbnail {
+.construction-swiper-thumbnail {
   margin-top: 3.125rem;
 }
 
-.constraction-slide-thumbnail {
+.construction-slide-thumbnail {
   cursor: pointer;
 }
 
-.constraction-slide-thumbnail::before {
+.construction-slide-thumbnail::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1298,27 +1277,27 @@ select::-ms-expand {
   transition: 0.2s;
 }
 
-.constraction-slide-thumbnail.swiper-slide-thumb-active::before {
+.construction-slide-thumbnail.swiper-slide-thumb-active::before {
   background-color: initial;
 }
 
-.constraction-slide-thumbnail img {
+.construction-slide-thumbnail img {
   aspect-ratio: 262.5/200;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.constraction-button {
+.construction-button {
   margin-top: 4.6875rem;
   text-align: center;
 }
 
-.constraction-swiper-thumbnail .swiper-scrollbar {
+.construction-swiper-thumbnail .swiper-scrollbar {
   display: none;
 }
 @media screen and (max-width: 599px) {
-  .constraction-swiper-thumbnail .swiper-scrollbar {
+  .construction-swiper-thumbnail .swiper-scrollbar {
     display: block;
     position: relative;
     margin-top: 1.875rem;
@@ -1327,7 +1306,7 @@ select::-ms-expand {
 
 .sub-mv {
   height: 50rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/common/sub-mv.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/common/sub-mv.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1350,9 +1329,13 @@ select::-ms-expand {
 
 .sub-mv-title {
   font-size: 5.125rem;
-  font-weight: 700;
   color: #fff;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .sub-mv-title {
+    font-size: 3.5rem;
+  }
 }
 
 .sub-mv-title-yellow {
@@ -1362,7 +1345,6 @@ select::-ms-expand {
 .sub-mv-title-en {
   display: block;
   font-size: 3rem;
-  font-weight: 700;
   font-family: "Raleway", serif;
   text-transform: uppercase;
   margin-top: 1.875rem;
@@ -1404,7 +1386,6 @@ select::-ms-expand {
 .greeting-text {
   margin-top: 4.1875rem;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .greeting-sign {
@@ -1416,13 +1397,11 @@ select::-ms-expand {
 
 .greeting-post {
   font-size: 1.5rem;
-  font-weight: 700;
   font-family: "Noto Serif", serif;
 }
 
 .greeting-name {
   font-size: 3rem;
-  font-weight: 700;
   font-family: "Noto Serif", serif;
 }
 
@@ -1457,7 +1436,6 @@ select::-ms-expand {
   padding: 1.5625rem 0;
   display: flex;
   font-size: 1.5rem;
-  font-weight: 700;
   border-bottom: 1px dotted #FFD600;
 }
 
@@ -1526,7 +1504,6 @@ select::-ms-expand {
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .history-list-item:nth-of-type(2),
@@ -1565,7 +1542,6 @@ select::-ms-expand {
 
 .history-list-term {
   font-size: 1.5rem;
-  font-weight: 700;
   position: relative;
 }
 
@@ -1594,10 +1570,6 @@ select::-ms-expand {
   margin-left: 1.875rem;
 }
 
-.pagenavi {
-  margin-top: 4.375rem;
-}
-
 .wp-pagenavi {
   display: flex;
   clear: both;
@@ -1612,16 +1584,16 @@ select::-ms-expand {
 
 .pagenavi .wp-pagenavi a,
 .pagenavi .wp-pagenavi span {
+  display: grid;
+  place-content: center;
   height: 3.625rem;
   width: 3.375rem;
   font-size: 1.5rem;
-  font-weight: 700;
   font-family: "Raleway", serif;
   color: #3A3838;
   border: 3px solid #3A3838;
   background-color: #fff;
   transition: 0.3s;
-  padding: 0.625rem 0;
 }
 @media screen and (max-width: 767px) {
   .pagenavi .wp-pagenavi a,
@@ -1655,6 +1627,447 @@ select::-ms-expand {
   .page-news-inner {
     max-width: 62.5rem;
   }
+}
+
+.page-news-pagenavi {
+  margin-top: 4.6875rem;
+}
+
+.page-construction.construction::before {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .page-construction-inner {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .page-construction-title .section-title-en-left {
+    font-size: clamp(2.1875rem, -0.2958185053rem + 12.4555160142vw, 4.375rem);
+  }
+}
+
+.page-construction-lists.construction-lists {
+  margin-top: 3.4375rem;
+}
+
+.page-construction-tabs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 3.125rem;
+  place-content: center;
+  font-size: 1.2rem;
+  margin-top: 3.4375rem;
+}
+@media screen and (max-width: 599px) {
+  .page-construction-tabs {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.25rem;
+  }
+}
+
+.page-construction-tab {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.page-construction-tab.is-active {
+  color: #FFD600;
+}
+
+.page-construction-tab:hover {
+  color: #FFD600;
+}
+
+.page-construction-tab {
+  border-right: 2px solid #D1D1D1;
+}
+
+.page-construction-tab:last-child {
+  border-right: none;
+}
+
+@media screen and (max-width: 599px) {
+  .page-construction-tab:nth-child(3) {
+    border-right: none;
+  }
+}
+
+.page-construction-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.25rem;
+  margin-top: 3.4375rem;
+}
+@media screen and (max-width: 1023px) {
+  .page-construction-items {
+    gap: 3.75rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-construction-items {
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .page-construction-items {
+    grid-template-columns: auto;
+  }
+}
+
+.page-construction-item {
+  position: relative;
+}
+
+.page-construction-content-img img {
+  aspect-ratio: 550/350;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-construction-category {
+  font-size: 1.2rem;
+  padding: 0.3125rem 1.5625rem;
+  background: #FFD600;
+  display: inline-block;
+  position: absolute;
+  top: 3.125rem;
+  left: 0;
+}
+
+.page-construction-text {
+  background: rgba(255, 214, 0, 0.7);
+  padding: 1.875rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0; /* 初期状態は透明 */
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0); /* 下から隠す */
+  transition: opacity 0.3s ease-out, -webkit-clip-path 0.3s ease-out;
+  transition: clip-path 0.3s ease-out, opacity 0.3s ease-out;
+  transition: clip-path 0.3s ease-out, opacity 0.3s ease-out, -webkit-clip-path 0.3s ease-out;
+}
+@media screen and (max-width: 1023px) {
+  .page-construction-text {
+    opacity: 1;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0); /* 全体を表示 */
+    padding: 1.25rem;
+  }
+}
+
+.page-construction-item:hover .page-construction-text {
+  opacity: 1;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0); /* 全体を表示 */
+}
+
+.page-construction-subtitle {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+  .page-construction-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.page-construction-read.construction-body-button {
+  margin-top: 0rem;
+}
+
+.page-construction-pagenavi {
+  margin-top: 6.25rem;
+}
+
+.page-contact {
+  padding: 7.5rem 0;
+  position: relative;
+}
+
+@media screen and (max-width: 1499px) {
+  .page-contact-inner {
+    max-width: 93.75rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-contact-inner {
+    max-width: 62.5rem;
+  }
+}
+
+.page-contact-read {
+  margin-top: 2.75rem;
+}
+
+.form {
+  margin-top: 2.5rem;
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .form-wrap {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+.form-wrap.form-wrap--textarea {
+  align-items: flex-start;
+}
+
+.form-wrap + .form-wrap {
+  margin-top: 2.5rem;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 16.875rem;
+}
+@media screen and (max-width: 767px) {
+  .form-label {
+    max-width: 100%;
+  }
+}
+
+.form-label span {
+  margin-left: auto;
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+  font-size: 1.25rem;
+  background-color: #FFD600;
+  border: 2px solid #3A3838;
+}
+@media screen and (max-width: 767px) {
+  .form-label span {
+    margin-left: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-input,
+  .form-textarea {
+    margin-top: 0.9375rem;
+    width: 100%;
+  }
+}
+
+.form-input,
+.form-textarea {
+  flex-grow: 1;
+  margin-left: 1.875rem;
+}
+@media screen and (max-width: 767px) {
+  .form-input,
+  .form-textarea {
+    margin-left: 0rem;
+  }
+}
+
+.form-input input {
+  height: 3.125rem;
+  padding: 0.25rem 0.9375rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 3px solid #D9D9D9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (max-width: 1023px) {
+  .form-input input {
+    border-radius: 0.3125rem;
+  }
+}
+
+.form-input input:focus {
+  border: 2px solid #3A3838;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-select {
+  margin-left: 1.875rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .form-select {
+    margin-top: 0.9375rem;
+    margin-left: 0rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.form-select select {
+  text-align: center;
+  width: 28.125rem;
+  height: 3.125rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.625rem;
+  border: 3px solid #D9D9D9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .form-select select {
+    border-radius: 0.3125rem;
+    font-size: 1.125rem;
+  }
+}
+
+.form-select::after {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  display: inline-block;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+
+/* IEで矢印を消す */
+/* 選択時の枠線の色を変える */
+.form-select select:focus {
+  border: 2px solid #3A3838;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-textarea textarea {
+  height: 15.625rem;
+  padding: 0.5rem 0.9375rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 3px solid #D9D9D9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (max-width: 1023px) {
+  .form-textarea textarea {
+    border-radius: 0.3125rem;
+  }
+}
+
+.form-textarea textarea:focus {
+  border: 2px solid #3A3838;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-privacy {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.form-privacy input {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  top: 0rem;
+  left: 0;
+  margin: 0;
+}
+
+.form-privacy input + span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #808080;
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.form-privacy input + span::after {
+  content: "";
+  margin-top: -0.125rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.3125rem;
+  transform: rotate(-45deg);
+  display: block;
+  width: 1.125rem;
+  height: 0.625rem;
+  border-bottom: 0.1875rem solid #333;
+  border-left: 0.1875rem solid #333;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.form-privacy input:checked + span::after {
+  opacity: 1;
+}
+
+.form-privacy input + span a {
+  text-decoration: underline;
+}
+
+.form-submit {
+  margin-top: 2.875rem;
+  text-align: center;
+  width: 100%;
+  height: 4.0625rem;
+  position: relative;
+}
+
+.form-submit input {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #FFD600;
+  color: #3A3838;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3A3838;
+  transition: 0.3s;
+  opacity: 0.3;
+}
+.form-submit input.form-submit-active {
+  opacity: 1;
+}
+
+.form-submit input.form-submit-active:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.form-submit input:hover,
+.form-submit input:focus {
+  outline: none;
+}
+
+.form-submit input::-moz-foucus-inner {
+  padding: 0;
+  border: none;
+}
+
+/* オートフィルで入力後の水色背景を変える */
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff inset;
 }
 
 .top-fv h3 {

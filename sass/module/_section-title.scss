@@ -5,7 +5,6 @@
   color: #E8E8E8;
   font-size: rem(150);
   font-size: rclamp(80, 150, 1500, 1920);
-  font-weight: $bold;
   writing-mode: vertical-lr;
   font-family: $font-family-en;
   position: absolute;
@@ -21,7 +20,6 @@
   text-transform: uppercase;
   color: #E8E8E8;
   font-size: rclamp(80, 150, 1500, 1920);
-  font-weight: $bold;
   writing-mode: vertical-lr;
   font-family: $font-family-en;
   position: absolute;
@@ -30,6 +28,7 @@
   @include mq(xl) {
     writing-mode: horizontal-tb;
     position: static;
+    
   }
 }
 
@@ -43,7 +42,6 @@
   font-size: rem(70);
   font-size: rclamp(50, 70, 1500, 1920);
   font-family: $font-family-base;
-  font-weight: $bold;
   color: $yellow;
   @include mq(md) {
       font-size: rclamp(30, 60, 375, 767);

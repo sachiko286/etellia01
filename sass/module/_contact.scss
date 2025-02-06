@@ -22,7 +22,6 @@
 
 .contact-title {
   font-size: rclamp(60, 70, 1500, 1920);
-  font-weight: $bold;
   text-align: center;
   @include mq(md) {
       font-size: rem(40);
@@ -33,7 +32,6 @@
 .contact-text {
   margin-top: rem(67);
   font-size: rem(24);
-  font-weight: $bold;
   text-align: center;
   @include mq(lg) {
       margin-top: rem(40);
@@ -58,7 +56,6 @@
   width: 100%;
   border: 2px solid #fff;
   font-size: rem(24);
-  font-weight: $bold;
   text-align: center;
   transition: 0.3s;
   @include mq(sm) {

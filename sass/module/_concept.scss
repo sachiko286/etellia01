@@ -31,7 +31,6 @@
 .concept-text {
   margin-top: rem(67);
   font-size: rem(24);
-  font-weight: $bold;
   @include mq(md) {
       // margin-top: rem(40);
   }

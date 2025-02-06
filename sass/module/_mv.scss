@@ -31,7 +31,6 @@
   font-family: $font-family-en;
   font-size: rem(160);
   font-size: rclamp(90, 160, 1500, 1920);
-  font-weight: $bold;
   line-height: 1.2;
   text-align: center;
   border-bottom: 5px solid #fff;
@@ -64,8 +63,6 @@
   margin-top: rem(70);
   font-size: rem(40);
   font-size: rclamp(27, 40, 1500, 1920);
-  font-family: $font-family-base;
-  font-weight: $bold;
   text-align: center;
   color: #fff;
   @include mq(lg) {

@@ -2,7 +2,7 @@
 
 .sub-mv {
   height: rem(800);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/common/sub-mv.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/common/sub-mv.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,9 +23,11 @@
 
 .sub-mv-title {
   font-size: rem(82);
-  font-weight: $bold;
   color: #fff;
   text-align: center;
+  @include mq(md) {
+      font-size: rem(56);
+  }
 
 }
 
@@ -36,7 +38,6 @@
 .sub-mv-title-en {
   display: block;
   font-size: rem(48);
-  font-weight: $bold;
   font-family: $font-family-en;
   text-transform: uppercase;
   margin-top: rem(30);

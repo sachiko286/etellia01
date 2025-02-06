@@ -1,19 +1,19 @@
 @use "../global" as *;
 
-.page-news {
+.page-contact {
   padding: rem(120) 0;
   position: relative;
 }
 
-.page-news-inner {
+.page-contact-inner {
   @include mq(xl) {
-    max-width: rem(1575);
-}
+      max-width: rem(1500);
+  }
   @include mq(md) {
       max-width: rem(1000);
   }
 }
 
-.page-news-pagenavi {
-  margin-top: rem(75);
+.page-contact-read {
+  margin-top: rem(44);
 }
