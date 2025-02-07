@@ -2107,6 +2107,13 @@ input:-webkit-autofill {
 
 .reason-item-img {
   padding: 4.375rem 6.375rem 0;
+  text-align: center;
+}
+
+.reason-item-img img {
+  max-width: 9.375rem;
+  width: 100%;
+  display: inline-block;
 }
 
 .reason-item-body {
