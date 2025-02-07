@@ -2070,6 +2070,61 @@ input:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff inset;
 }
 
+.reason {
+  position: relative;
+}
+
+.reason-text {
+  margin-top: 3.125rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.reason-content {
+  margin-top: 6.25rem;
+}
+
+.reason-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.3125rem;
+}
+
+.reason-item-number {
+  font-size: 3rem;
+  font-family: "Raleway", serif;
+  text-align: center;
+}
+
+.reason-item-number span {
+  font-size: 6rem;
+  color: #FFD600;
+}
+
+.reason-item-content {
+  background: #F4F3F3;
+}
+
+.reason-item-img {
+  padding: 4.375rem 6.375rem 0;
+}
+
+.reason-item-body {
+  margin-top: 3.125rem;
+  padding: 0 1.25rem 3.125rem;
+}
+
+.reason-item-title {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.reason-item-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.875rem;
+}
+
 .top-fv h3 {
   font-size: 3.125rem;
 }/*# sourceMappingURL=styles.css.map */
