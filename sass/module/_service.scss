@@ -27,11 +27,16 @@
   @include mq(lg) {
       gap: rem(50);
   }
-  @include mq(md) {
-      // flex-direction: column;
+  @include mq(sm) {
+      flex-direction: column;
   }
 }
 
+.service-img-item {
+  @include mq(sm) {
+      margin-inline: auto;
+  }
+}
 
 .service-img-link  {
   display: block;
@@ -42,6 +47,10 @@
   position: relative;
   @include mq(lg) {
       max-width: rem(280);
+  }
+  @include mq(sm) {
+      display: flex;
+      justify-content: center;
   }
 }
 
@@ -73,6 +82,15 @@
   @include mq(lg) {
       font-size: rem(30);
   }
+  @include mq(sm) {
+      opacity: 1;
+      position: static;
+      margin-left: rem(-20);
+      background: rgba($color: $yellow, $alpha: 0.5);
+      width: 80%;
+      height: 80%;
+      align-self: center;
+  }
 
 }
 
@@ -101,6 +119,10 @@
   @include mq(lg) {
       // margin-top: rem(60);
   }
+  @include mq(sm) {
+    flex-direction: column;
+}
+  
 }
 
 .service-button {

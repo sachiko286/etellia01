@@ -7,6 +7,12 @@
 }
 
 .reason-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+}
+@include mq(md) {
+  max-width: rem(1000);
+}
 }
 
 .reason-text {
@@ -26,6 +32,15 @@
   // display: flex;
   gap: rem(69);
   // overflow: hidden;
+  @include mq(lg) {
+      gap: rem(30);
+  }
+  @include mq(md) {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: rem(600);
+    width: 100%;
+    margin-inline: auto;
+  }
   
 
 }

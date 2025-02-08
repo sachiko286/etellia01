@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .page-service-content {
-  padding: rem(120) 0 ;
+  padding: rem(120) 0;
   position: relative;
 }
 
@@ -11,7 +11,15 @@
 
 .custom {}
 
-.page-service-inner {}
+.page-service-inner {
+  @include mq(xl) {
+    max-width: rem(1575);
+  }
+
+  @include mq(md) {
+    max-width: rem(1000);
+  }
+}
 
 .inner {}
 
@@ -40,21 +48,35 @@
   margin-top: rem(-100);
   position: relative;
   z-index: 1;
+  @include mq(md) {
+      margin-top: rem(0);
+  }
 }
 
 .page-service-content-right .page-seavice-body-img {
-  margin-right: calc( 400 / 1200 * 100%);
+  margin-right: calc(400 / 1200 * 100%);
+  @include mq(md) {
+      margin-right: rem(0);
+  }
 }
 
 .page-service-content-left .page-seavice-body-img {
-  margin-left: calc( 400 / 1200 * 100%);
+  margin-left: calc(400 / 1200 * 100%);
+  @include mq(md) {
+      margin-left: rem(0);
+  }
 }
 
 .page-service-content-right .page-seavice-body-text {
-  margin-left: calc( 300 / 1200 * 100%);
+  margin-left: calc(300 / 1200 * 100%);
+  @include mq(md) {
+      margin-left: rem(0);
+  }
 }
 
 .page-service-content-left .page-seavice-body-text {
-  margin-right: calc( 300 / 1200 * 100%);
+  margin-right: calc(300 / 1200 * 100%);
+  @include mq(md) {
+      margin-right: rem(0);
+  }
 }
-
