@@ -52,6 +52,11 @@ html {
     font-size: 16px;
   }
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 1.3333333333vw;
+  }
+}
 @media screen and (max-width: 767px) {
   html {
     font-size: 9.6px;
@@ -1506,11 +1511,12 @@ select::-ms-expand {
   max-width: 90.625rem;
   padding: 0 1.5625rem;
   margin-inline: auto;
-  margin-top: 4.1875rem;
 }
 
 .history-list {
+  position: relative;
   margin-left: 6rem;
+  margin-top: 3.125rem;
 }
 @media screen and (max-width: 1499px) {
   .history-list {
@@ -1518,10 +1524,9 @@ select::-ms-expand {
   }
 }
 
-.history-list::before {
+.history-wrapper::before {
   content: "";
   position: absolute;
-  left: calc(50% - 43.75rem);
   width: 0.25rem;
   height: 95%;
   background: #FFD600;
@@ -1529,7 +1534,7 @@ select::-ms-expand {
   z-index: 1;
 }
 @media screen and (max-width: 1499px) {
-  .history-list::before {
+  .history-wrapper::before {
     left: 3.75rem;
   }
 }
@@ -1539,6 +1544,7 @@ select::-ms-expand {
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .history-list-item:nth-of-type(2),
@@ -1584,7 +1590,7 @@ select::-ms-expand {
   content: "";
   position: absolute;
   top: 25%;
-  left: -6.25rem;
+  left: -6.3125rem;
   width: 0.9375rem;
   height: 0.9375rem;
   border-radius: 50%;
@@ -1603,6 +1609,19 @@ select::-ms-expand {
 
 .history-list-description {
   margin-left: 1.875rem;
+}
+
+.history-list-item:nth-of-type(1)::after {
+  content: "";
+  aspect-ratio: 445/381;
+  max-width: 27.8125rem;
+  width: 100%;
+  position: absolute;
+  background-image: url(/images/common/history01.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 47.0625rem;
 }
 
 .wp-pagenavi {
@@ -1754,6 +1773,10 @@ select::-ms-expand {
 
 .page-construction-item {
   position: relative;
+}
+
+.page-construction-item a:hover {
+  opacity: 1;
 }
 
 .page-construction-content-img img {

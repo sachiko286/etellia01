@@ -1,5 +1,11 @@
 @use "../global" as *;
 
+.section-title {
+  @include mq(xl) {
+      // text-align: center;
+  }
+}
+
 .section-title-en-right {
   text-transform: uppercase;
   color: #E8E8E8;

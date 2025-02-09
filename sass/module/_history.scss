@@ -8,45 +8,49 @@
 
 .history-inner {
   @include mq(xl) {
-      max-width: rem(1575);
+    max-width: rem(1575);
   }
 
 }
 
-.history-title {
+.history-title {}
 
-}
 .history-wrapper {
-max-width: rem(1450);
-padding: 0 rem(25);
-margin-inline: auto;
-margin-top: rem(67);
+  max-width: rem(1450);
+  padding: 0 rem(25);
+  margin-inline: auto;
+  // margin-top: rem(67);
+  // margin-left: rem(210);
+  // margin-left: rclamp(50, 210, 1500, 1920);
 }
 
 .history-list {
   // max-width: rem(1400);
   // margin-top: rem(67);
-  // position: relative;
+  position: relative;
   margin-left: rem(96);
+  margin-top: rem(50);
+
   // padding-left: rem(96);
   // margin-inline: auto;
   @include mq(xl) {
-      // margin-left: rem(50);
-       position: relative;
+    // margin-left: rem(50);
+    position: relative;
   }
 }
 
-.history-list::before {
+.history-wrapper::before {
   content: "";
   position: absolute;
-  left: calc(50% - rem(700));
+  // left: calc(50% - rem(700));
   width: rem(4);
   height: 95%;
   background: $yellow;
   top: rem(0);
   z-index: 1;
+
   @include mq(xl) {
-      left: rem(60);
+    left: rem(60);
   }
 }
 
@@ -56,27 +60,28 @@ margin-top: rem(67);
   justify-content: flex-start;
   align-items: flex-start;
   font-size: rem(24);
+  position: relative;
 }
 
 .history-list-item:nth-of-type(2),
 .history-list-item:nth-of-type(10),
-.history-list-item:nth-of-type(12)  {
+.history-list-item:nth-of-type(12) {
   margin-top: rem(50);
 }
 
 .history-list-item:nth-of-type(3),
-.history-list-item:nth-of-type(13)  {
+.history-list-item:nth-of-type(13) {
   margin-top: rem(20);
 }
 
 .history-list-item:nth-of-type(4),
-.history-list-item:nth-of-type(6), 
+.history-list-item:nth-of-type(6),
 .history-list-item:nth-of-type(8) {
   margin-top: rem(100);
 }
 
 .history-list-item:nth-of-type(5),
-.history-list-item:nth-of-type(11)  {
+.history-list-item:nth-of-type(11) {
   margin-top: rem(30);
 }
 
@@ -105,7 +110,7 @@ margin-top: rem(67);
   content: "";
   position: absolute;
   top: 25%;
-  left: rem(-100);
+  left: rem(-101);
   width: rem(15);
   height: rem(15);
   border-radius: 50%;
@@ -124,4 +129,18 @@ margin-top: rem(67);
 
 .history-list-description {
   margin-left: rem(30);
+}
+
+
+.history-list-item:nth-of-type(1)::after {
+  content: "";
+  aspect-ratio: 445 / 381;
+  max-width: rem(445);
+  width: 100%;
+  position: absolute;
+  background-image: url(/images/common/history01.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: rem(753);
 }
