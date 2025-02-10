@@ -4,10 +4,6 @@
   padding: rem(120) 0;
   background: #FFFBE6;
   position: relative;
-  @include mq(md) {
-    padding-top: rem(70);
-    padding-bottom: rem(100);
-}
 }
 
 .overview-inner {

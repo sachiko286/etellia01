@@ -3,6 +3,9 @@
 .construction {
   padding: rem(120) 0;
   position: relative;
+  @include mq(md) {
+      // padding: rem(70) 0;
+  }
 }
 
 .construction::before {
@@ -32,7 +35,7 @@
 }
 
 .construction-lists {
-  margin-top: rem(67);
+  margin-top: rem(50);
   display: flex;
   flex-wrap: wrap;
   gap: rem(20);
@@ -49,7 +52,7 @@
 }
 
 .construction-swiper {
-  margin-top: rem(48);
+  margin-top: rem(50);
 }
 
 .construction-slide {

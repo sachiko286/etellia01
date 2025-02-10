@@ -2,7 +2,7 @@
 
 .section-title {
   @include mq(xl) {
-      // text-align: center;
+    // text-align: center;
   }
 }
 
@@ -11,11 +11,14 @@
   color: #E8E8E8;
   font-size: rem(150);
   font-size: rclamp(80, 150, 1500, 1920);
+  line-height: 1.2;
   writing-mode: vertical-lr;
   font-family: $font-family-en;
   position: absolute;
   top: rem(120);
-  right: rclamp(0, 68, 1600, 1920);
+  // right: rclamp(0, 68, 1600, 1920);
+  right: calc(50% - #{min(46vw, rem(840))});
+
   @include mq(xl) {
     writing-mode: horizontal-tb;
     position: static;
@@ -26,21 +29,24 @@
   text-transform: uppercase;
   color: #E8E8E8;
   font-size: rclamp(80, 150, 1500, 1920);
+  line-height: 1.2;
   writing-mode: vertical-lr;
   font-family: $font-family-en;
   position: absolute;
   top: rem(120);
   left: rclamp(0, 68, 1600, 1920);
+  left: calc(50% - #{min(46.5vw, rem(840))});
+
+
   @include mq(xl) {
     writing-mode: horizontal-tb;
     position: static;
-    
+
   }
 }
 
 .section-title-en-right span,
-.section-title-en-left span
- {
+.section-title-en-left span {
   color: rgba($color: #FFD600, $alpha: 0.25);
 }
 
@@ -49,7 +55,8 @@
   font-size: rclamp(50, 70, 1500, 1920);
   font-family: $font-family-base;
   color: $yellow;
+
   @include mq(md) {
-      font-size: rclamp(30, 60, 375, 767);
+    font-size: rclamp(30, 60, 375, 767);
   }
-} 
+}

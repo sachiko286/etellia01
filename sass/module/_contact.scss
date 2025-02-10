@@ -5,7 +5,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: rem(150) 0 rem(153);
+  padding: rem(150) 0 rem(150);
+  @include mq(md) {
+      padding: rem(120) 0;
+  }
 }
 
 .contact-inner {
@@ -30,7 +33,7 @@
 }
 
 .contact-text {
-  margin-top: rem(67);
+  margin-top: rem(50);
   font-size: rem(24);
   text-align: center;
   @include mq(lg) {
@@ -39,7 +42,7 @@
 }
 
 .contact-button-content {
-  margin-top: rem(59);
+  margin-top: rem(50);
   display: flex;
   gap: rem(100);
   @include mq(sm) {

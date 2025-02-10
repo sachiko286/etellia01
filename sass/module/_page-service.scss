@@ -1,15 +1,14 @@
 @use "../global" as *;
 
-.page-service-content {
+.page-service-container {
   padding: rem(120) 0;
   position: relative;
 }
 
-.page-service-content-left {
+.page-service-container-left {
   background: #FFFBE6;
 }
 
-.custom {}
 
 .page-service-inner {
   @include mq(xl) {
@@ -21,15 +20,6 @@
   }
 }
 
-.inner {}
-
-.page-service-title {}
-
-.section-title {}
-
-.section-title-en-right {}
-
-.section-title-ja {}
 
 .page-service-body {
   margin-top: rem(50);
@@ -41,42 +31,49 @@
   width: 100%;
 }
 
-.page-seavice-body-text {
+.page-seavice-body-content {
   padding: rem(50);
   font-size: rem(24);
   background: rgba($color: #FFD600, $alpha: 0.7);
-  margin-top: rem(-100);
   position: relative;
-  z-index: 1;
+  top: rem(-100);
   @include mq(md) {
-      margin-top: rem(0);
+    top: rem(0);
   }
 }
 
-.page-service-content-right .page-seavice-body-img {
+.page-seavice-body-text + .page-seavice-body-text {
+  margin-top: rem(20);
+}
+
+.page-service-container-right .page-seavice-body-img {
   margin-right: calc(400 / 1200 * 100%);
+
   @include mq(md) {
-      margin-right: rem(0);
+    margin-right: rem(0);
   }
 }
 
-.page-service-content-left .page-seavice-body-img {
+.page-service-container-left .page-seavice-body-img {
   margin-left: calc(400 / 1200 * 100%);
+
   @include mq(md) {
-      margin-left: rem(0);
+    margin-left: rem(0);
   }
 }
 
-.page-service-content-right .page-seavice-body-text {
+.page-service-container-right .page-seavice-body-content {
   margin-left: calc(300 / 1200 * 100%);
+
   @include mq(md) {
-      margin-left: rem(0);
+    margin-left: rem(0);
   }
 }
 
-.page-service-content-left .page-seavice-body-text {
+.page-service-container-left .page-seavice-body-content {
   margin-right: calc(300 / 1200 * 100%);
+
   @include mq(md) {
-      margin-right: rem(0);
+    margin-right: rem(0);
   }
 }

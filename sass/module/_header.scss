@@ -165,7 +165,6 @@ max-width: none;
   width: 50vw;
   height: 100vh;
   background-color: $yellow;
-  overflow-y: scroll;
   scrollbar-width: none;
   transition: .6s;
 
@@ -192,6 +191,8 @@ max-width: none;
   margin-top: rem(100);
   margin-left: rem(150);
   height: 100%;
+  overflow-y: scroll;
+
 }
 
 .header-drawer-item a {

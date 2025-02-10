@@ -15,10 +15,14 @@
 }
 }
 
-.reason-text {
+.reason-read {
   margin-top: rem(50);
   font-size: rem(24);
   font-weight: $regular;
+}
+
+.reason-text + .reason-text {
+  margin-top: rem(20);
 }
 
 .reason-content {
@@ -68,13 +72,6 @@
   color: $yellow;
 }
 
-.reason-item-content {
-  // background: #F4F3F3;
-  // height: 100%;
-  // margin-top: rem(-40);
-  // max-width: rem(354);
-  // width: 100%;
-}
 
 .reason-item-img {
   // max-width: rem(354);
@@ -103,4 +100,3 @@
   font-weight: $regular;
   margin-top: rem(14);
 }
-

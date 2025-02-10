@@ -2,12 +2,7 @@
 
 .greeting {
   position: relative;
-  padding-top: rem(120);
-  padding-bottom: rem(139);
-  @include mq(md) {
-      padding-top: rem(70);
-      padding-bottom: rem(100);
-  }
+  padding: rem(120) 0;
 }
 
 .greeting-inner {
@@ -19,24 +14,14 @@
   }
 }
 
-.inner {
-}
 
-.greeting-title {
-}
-
-.section-title {
-}
-
-.section-title-en-right {
-}
-
-.section-title-ja {
-}
-
-.greeting-text {
-  margin-top: rem(67);
+.greeting-body {
+  margin-top: rem(50);
   font-size: rem(24);
+}
+
+.greeting-text + .greeting-text {
+  margin-top: rem(20);
 }
 
 .greeting-sign {
