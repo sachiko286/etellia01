@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.section {
+  padding: rem(120) 0;
+  position: relative;
+  @include mq(md) {
+      padding: rem(90) 0;
+  }
+}
+
+.section.concept {
+  padding-bottom: rem(170);
+  @include mq(md) {
+      padding-bottom: rem(150);
+  }
+}
+
+.section.news {
+  padding-bottom: rem(0);
+}
+
+
+.section.page-service-container {
+  padding-bottom: rem(20);
+  @include mq(md) {
+      padding-bottom: rem(90);
+  }
+}

@@ -5,13 +5,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: rem(120);
-  padding-bottom: rem(170);
-  position: relative;
-  @include mq(md) {
-      // padding-top: rem(90);
-      // padding-bottom: rem(140);
-  }
 }
 
 .concept-inner {
@@ -23,17 +16,9 @@
   }
 }
 
-
-.section-title-ja {
-  // line-height: 1.2;
-}
-
 .concept-body {
   margin-top: rem(50);
   font-size: rem(24);
-  @include mq(md) {
-      // margin-top: rem(40);
-  }
 }
 
 .concept-text + .concept-text {

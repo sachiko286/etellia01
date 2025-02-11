@@ -18,10 +18,10 @@
   top: rem(120);
   // right: rclamp(0, 68, 1600, 1920);
   right: calc(50% - #{min(46vw, rem(840))});
-
   @include mq(xl) {
     writing-mode: horizontal-tb;
     position: static;
+    font-size: rclamp(80, 120, 1024, 1499);
   }
 }
 
@@ -36,12 +36,10 @@
   top: rem(120);
   left: rclamp(0, 68, 1600, 1920);
   left: calc(50% - #{min(46.5vw, rem(840))});
-
-
   @include mq(xl) {
     writing-mode: horizontal-tb;
     position: static;
-
+    font-size: rclamp(80, 120, 1024, 1499);
   }
 }
 
@@ -57,6 +55,6 @@
   color: $yellow;
 
   @include mq(md) {
-    font-size: rclamp(30, 60, 375, 767);
+    font-size: rclamp(20, 50, 375, 767);
   }
 }

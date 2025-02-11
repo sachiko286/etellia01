@@ -1,9 +1,6 @@
 @use "../global" as *;
 
 .reason {
-  position: relative;
-  padding: rem(120) 0;
-  
 }
 
 .reason-inner {
@@ -26,8 +23,7 @@
 }
 
 .reason-content {
-  margin-top: rem(100);
-  
+  margin-top: rem(25);
 }
 
 .reason-items {

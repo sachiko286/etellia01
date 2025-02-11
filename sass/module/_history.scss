@@ -1,9 +1,6 @@
 @use "../global" as *;
 
 .history {
-  padding: rem(120) 0;
-  position: relative;
-
 }
 
 .history-inner {
@@ -12,8 +9,6 @@
   }
 
 }
-
-.history-title {}
 
 .history-wrapper {
   max-width: rem(1450);

@@ -2,12 +2,7 @@
 
 .service {
   background: #FFFBE6;
-  position: relative;
-  padding-top: rem(120);
-  padding-bottom: rem(120);
   @include mq(md) {
-      padding-top: rem(70);
-      padding-bottom: rem(100);
   }
 }
 

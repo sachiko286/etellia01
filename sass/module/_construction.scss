@@ -1,11 +1,6 @@
 @use "../global" as *;
 
 .construction {
-  padding: rem(120) 0;
-  position: relative;
-  @include mq(md) {
-      // padding: rem(70) 0;
-  }
 }
 
 .construction::before {

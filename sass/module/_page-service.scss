@@ -1,8 +1,6 @@
 @use "../global" as *;
 
 .page-service-container {
-  padding: rem(120) 0;
-  position: relative;
 }
 
 .page-service-container-left {
@@ -39,6 +37,7 @@
   top: rem(-100);
   @include mq(md) {
     top: rem(0);
+    padding: rem(33);
   }
 }
 

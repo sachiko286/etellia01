@@ -43,6 +43,7 @@
   border: 2px solid $black;
   @include mq(md) {
     margin-left: rem(20);
+    padding: rem(5) rem(10);
       
   }
 }
