@@ -1,7 +1,8 @@
 @use "../global" as *;
 
 .header {
-  width: rem(100);
+  // width: rem(100);
+  width: 100px;
   background: $yellow;
   height: 100vh;
   position: fixed;

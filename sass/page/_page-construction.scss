@@ -2,7 +2,7 @@
 
 .page-construction {}
 
-.page-construction.construction::before {
+.page-construction .construction::before {
   display: none;
 }
 
@@ -70,7 +70,6 @@
 .page-construction-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //(列数(数値のみ), calc((100% - 縦の間隔(gapと同じ。例:3rem)) / 列数と同じ値)
   gap: rem(100);
   margin-top: rem(55);
   @include mq(lg) {
@@ -92,8 +91,6 @@
 .page-construction-item a:hover {
   opacity: 1;
 }
-
-.page-construction-content-img {}
 
 .page-construction-content-img img {
   aspect-ratio: 550 / 350;

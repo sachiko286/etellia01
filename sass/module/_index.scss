@@ -1,6 +1,5 @@
 // 作ったscssファイルを書いていく
 @use 'inner';
-@use 'test';
 @use 'header';
 @use 'main';
 @use 'mv';
@@ -17,12 +16,8 @@
 @use 'overview';
 @use 'history';
 @use 'pagenavi';
-@use 'page-news';
-@use 'page-construction';
-@use 'page-contact';
 @use 'form';
 @use 'reason';
-@use 'page-service';
 @use 'section';
 
 
