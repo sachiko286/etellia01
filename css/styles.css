@@ -1193,7 +1193,7 @@ select::-ms-expand {
   }
 }
 
-.swiper-slide img {
+.construction-slide img {
   width: 66.6666666667%;
   aspect-ratio: 800/500;
   -o-object-fit: cover;
@@ -1201,17 +1201,17 @@ select::-ms-expand {
   margin-right: -12.5rem;
 }
 @media screen and (max-width: 1499px) {
-  .swiper-slide img {
+  .construction-slide img {
     margin-right: -18.75rem;
   }
 }
 @media screen and (max-width: 1023px) {
-  .swiper-slide img {
+  .construction-slide img {
     width: 75%;
   }
 }
 @media screen and (max-width: 599px) {
-  .swiper-slide img {
+  .construction-slide img {
     width: 100%;
     margin-right: 0rem;
   }
