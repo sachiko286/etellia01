@@ -4,16 +4,6 @@
   background: #FFFBE6;
 }
 
-.overview-inner {
-  @include mq(xl) {
-    max-width: rem(1575);
-}
-  @include mq(md) {
-      max-width: rem(1000);
-  }
-}
-
-
 .overview-profile {
   margin-top: rem(42);
 }

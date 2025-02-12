@@ -3,14 +3,6 @@
 .page-contact {
 }
 
-.page-contact-inner {
-  @include mq(xl) {
-      max-width: rem(1575);
-  }
-  @include mq(md) {
-      max-width: rem(1000);
-  }
-}
 
 .page-contact-read {
   margin-top: rem(44);

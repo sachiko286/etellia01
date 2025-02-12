@@ -7,15 +7,6 @@
   background-repeat: no-repeat;
 }
 
-.concept-inner {
-  @include mq(xl) {
-    max-width: rem(1575);
-}
-  @include mq(md) {
-      max-width: rem(1000);
-  }
-}
-
 .concept-body {
   margin-top: rem(50);
   font-size: rem(24);

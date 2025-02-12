@@ -13,13 +13,11 @@
   }
   }
 
-
 .page-construction-title .section-title-en-left {
   @include mq(sm) {
       font-size: rclamp(35, 70, 319, 600);
   }
 }
-
 
 .page-construction-lists.construction-lists {
   margin-top: rem(55);

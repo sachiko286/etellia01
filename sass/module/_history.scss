@@ -3,19 +3,13 @@
 .history {
 }
 
-.history-inner {
-  @include mq(xl) {
-    max-width: rem(1575);
-  }
-
-}
-
 .history-wrapper {
   max-width: rem(1450);
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
   @include mq(xl) {
+      max-width: rem(1575);
       position: relative;
       padding-bottom: rem(20);
   }
@@ -31,8 +25,11 @@
   z-index: 1;
   @include mq(xl) {
     // height: 100%;
-    top: auto;
-    bottom: rem(5);
+    top: rem(60);
+    height: 90%;
+  }
+  @include mq(lg) {
+      height: 98%;
   }
   @include mq(md) {
       // height: 100%;
@@ -193,3 +190,13 @@
   margin-inline: auto;
 }
 
+
+.history-img-sp {
+  display: none;
+  @include mq(sm) {
+      display: block;
+      max-width: rem(250);
+      margin-inline: auto;
+      margin-top: rem(20);
+  }
+}
