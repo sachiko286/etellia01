@@ -4,15 +4,15 @@
   position: relative;
 }
 
-.footer-access {
+.access {
   position: relative;
 }
 
-.footer-accsec-body {
+.accsec-body {
   font-style:normal;
 }
 
-.footer-access-title .section-title-en-right {
+.access-title .section-title-en-right {
   color: #6C6969;
   right: rclamp(30, 70, 1500, 1920);
   @include mq(xl) {
@@ -25,11 +25,11 @@
   }
 }
 
-.footer-access-title .section-title-en-right span {
+.access-title .section-title-en-right span {
   color: $yellow;
 }
 
-.footer-map {
+.access-map {
   width: 100%;
   height: rem(800);
   @include mq(md) {
@@ -37,17 +37,17 @@
   }
 }
 
-.footer-map iframe {
+.access-map iframe {
   width: 100%;
   height: 100%
 }
 
-.footer-adress {
+.adress {
   background: $black;
   color: #fff;
 }
 
-.footer-adress-inner {
+.adress-inner {
   max-width: rem(1450);
   display: flex;
   justify-content: space-between;
@@ -56,40 +56,40 @@
   }
 }
 
-.footer-adress-content {
+.adress-content {
   @include mq(md) {
       margin-inline: auto;
   }
 }
-.footer-adress-body {
+.adress-body {
   margin-top: rem(42);
   display: block;
   font-style:normal;
 }
 
-.footer-adress-name {
+.adress-name {
   font-size: rem(50);
 }
 
-.footer-adress-post {
+.adress-post {
   font-size: rem(24);
 }
 
-.footer-adress-text {
+.adress-text {
   font-size: rem(28);
 }
 
-.footer-adress-tel {
+.dress-tel {
   margin-top: rem(17);
   font-size: rem(36);
 }
 
-.footer-adress-tel span {
+.adress-tel span {
   font-size: rem(24);
   text-transform: uppercase;
 }
 
-.footer-copy {
+.copyright {
   font-size: rem(16);
   font-weight: $regular;
   margin-top: auto;
@@ -99,7 +99,7 @@
   }
 }
 
-.footer-adress-mark {
+.adress-mark {
   @include mq(md) {
       display: none;;
   }

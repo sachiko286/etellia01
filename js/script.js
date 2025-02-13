@@ -71,8 +71,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // メイン
   const construction_swiperMain = new Swiper(".js-swiper-main", {
     spaceBetween: 50,
-
-
     loop: true,
     // autoplay: {                         
     //     delay: 4000,  
@@ -86,9 +84,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(document).ready(function () {
       var $submitBtn = $('#js-submit');
         $('#form input, #form textarea, #form select').on('change', function () {
-          // セレクトボックスの選択値を取得
-          // var selectedOption = $('#form select#pref').val();
-          
           if (
             $('#form #name').val() !== "" && 
             $('#form #sub').val() !== "" && 

@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+.adress {
+  background: $black;
+  color: #fff;
+}
+
+.adress-inner {
+  max-width: rem(1450);
+  display: flex;
+  justify-content: space-between;
+  @include mq(lg) {
+      flex-direction: column;
+  }
+}
+
+.adress-content {
+  @include mq(md) {
+      margin-inline: auto;
+  }
+}
+.adress-body {
+  margin-top: rem(42);
+  display: block;
+  font-style:normal;
+}
+
+.adress-name {
+  font-size: rem(50);
+}
+
+.adress-post {
+  font-size: rem(24);
+}
+
+.adress-text {
+  font-size: rem(28);
+}
+
+.adress-tel {
+  margin-top: rem(17);
+  font-size: rem(36);
+}
+
+.adress-tel span {
+  font-size: rem(24);
+  text-transform: uppercase;
+}
+
+.adress-mark {
+  @include mq(md) {
+      display: none;;
+  }
+}

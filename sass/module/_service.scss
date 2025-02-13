@@ -14,13 +14,13 @@
   @include mq(lg) {
       gap: rem(50);
   }
-  @include mq(sm) {
+  @include mq(md) {
       flex-direction: column;
   }
 }
 
 .service-img-item {
-  @include mq(sm) {
+  @include mq(md) {
       margin-inline: auto;
   }
 }
@@ -29,25 +29,26 @@
   display: block;
   max-width: rem(350);
   width: 100%;
-  aspect-ratio: 1 /1 ;
+  // aspect-ratio: 1 /1 ;
   transition: 0.3s;
   position: relative;
   @include mq(lg) {
       max-width: rem(280);
   }
-  @include mq(sm) {
+  @include mq(md) {
       display: flex;
       justify-content: center;
+      max-width: 100%;
   }
 }
+
 
 .service-img-item img {
   aspect-ratio: 1 /1 ;
   border-radius: 50%;
   object-fit: cover;
-  // clip-path: circle(50% at 50% 50%);
   @include mq(md) {
-      // aspect-ratio: 3 / 2;
+      width: 50%;
   }
 
 }
@@ -69,13 +70,13 @@
   @include mq(lg) {
       font-size: rem(30);
   }
-  @include mq(sm) {
+  @include mq(md) {
       opacity: 1;
       position: static;
       margin-left: rem(-20);
       background: rgba($color: $yellow, $alpha: 0.5);
-      width: 80%;
-      height: 80%;
+      max-width: 100%;
+      width: 40%;
       align-self: center;
   }
 
@@ -103,7 +104,7 @@
     margin-top: rem(60);
     gap: rem(50);
 }
-  @include mq(sm) {
+  @include mq(md) {
     flex-direction: column;
 }
 }

@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.copyright {
+  font-size: rem(16);
+  font-weight: $regular;
+  margin-top: auto;
+  @include mq(lg) {
+      margin-top: rem(60);
+      text-align: center;
+  }
+}

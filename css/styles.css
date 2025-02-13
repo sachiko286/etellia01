@@ -425,6 +425,7 @@ select::-ms-expand {
   margin-top: 6.25rem;
   margin-left: 9.375rem;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .header-drawer-item a {
@@ -725,13 +726,13 @@ select::-ms-expand {
     gap: 3.125rem;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .service-img-first {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .service-img-item {
     margin-inline: auto;
   }
@@ -741,7 +742,6 @@ select::-ms-expand {
   display: block;
   max-width: 21.875rem;
   width: 100%;
-  aspect-ratio: 1/1;
   transition: 0.3s;
   position: relative;
 }
@@ -750,10 +750,11 @@ select::-ms-expand {
     max-width: 17.5rem;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .service-img-link {
     display: flex;
     justify-content: center;
+    max-width: 100%;
   }
 }
 
@@ -763,6 +764,12 @@ select::-ms-expand {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 767px) {
+  .service-img-item img {
+    width: 50%;
+  }
+}
+
 .service-img-mask {
   max-width: 21.875rem;
   width: 100%;
@@ -783,14 +790,14 @@ select::-ms-expand {
     font-size: 1.875rem;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .service-img-mask {
     opacity: 1;
     position: static;
     margin-left: -1.25rem;
     background: rgba(255, 214, 0, 0.5);
-    width: 80%;
-    height: 80%;
+    max-width: 100%;
+    width: 40%;
     align-self: center;
   }
 }
@@ -821,7 +828,7 @@ select::-ms-expand {
     gap: 3.125rem;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 767px) {
   .service-img-second {
     flex-direction: column;
   }
@@ -1033,113 +1040,113 @@ select::-ms-expand {
   position: relative;
 }
 
-.footer-access {
+.access {
   position: relative;
 }
 
-.footer-accsec-body {
+.accsec-body {
   font-style: normal;
 }
 
-.footer-access-title .section-title-en-right {
+.access-title .section-title-en-right {
   color: #6C6969;
   right: clamp(1.875rem, -7.0535714286rem + 9.5238095238vw, 4.375rem);
 }
 @media screen and (max-width: 1499px) {
-  .footer-access-title .section-title-en-right {
+  .access-title .section-title-en-right {
     position: absolute;
     writing-mode: vertical-lr;
   }
 }
 @media screen and (max-width: 767px) {
-  .footer-access-title .section-title-en-right {
+  .access-title .section-title-en-right {
     top: 5rem;
   }
 }
 
-.footer-access-title .section-title-en-right span {
+.access-title .section-title-en-right span {
   color: #FFD600;
 }
 
-.footer-map {
+.access-map {
   width: 100%;
   height: 50rem;
 }
 @media screen and (max-width: 767px) {
-  .footer-map {
+  .access-map {
     height: 31.25rem;
   }
 }
 
-.footer-map iframe {
+.access-map iframe {
   width: 100%;
   height: 100%;
 }
 
-.footer-adress {
+.adress {
   background: #3A3838;
   color: #fff;
 }
 
-.footer-adress-inner {
+.adress-inner {
   max-width: 90.625rem;
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 1023px) {
-  .footer-adress-inner {
+  .adress-inner {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer-adress-content {
+  .adress-content {
     margin-inline: auto;
   }
 }
 
-.footer-adress-body {
+.adress-body {
   margin-top: 2.625rem;
   display: block;
   font-style: normal;
 }
 
-.footer-adress-name {
+.adress-name {
   font-size: 3.125rem;
 }
 
-.footer-adress-post {
+.adress-post {
   font-size: 1.5rem;
 }
 
-.footer-adress-text {
+.adress-text {
   font-size: 1.75rem;
 }
 
-.footer-adress-tel {
+.dress-tel {
   margin-top: 1.0625rem;
   font-size: 2.25rem;
 }
 
-.footer-adress-tel span {
+.adress-tel span {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
-.footer-copy {
+.copyright {
   font-size: 1rem;
   font-weight: 400;
   margin-top: auto;
 }
 @media screen and (max-width: 1023px) {
-  .footer-copy {
+  .copyright {
     margin-top: 3.75rem;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer-adress-mark {
+  .adress-mark {
     display: none;
   }
 }
@@ -2094,6 +2101,117 @@ input:-webkit-autofill {
 @media screen and (max-width: 767px) {
   .section.service-container {
     padding-bottom: 5.625rem;
+  }
+}
+
+.access {
+  position: relative;
+}
+
+.accsec-body {
+  font-style: normal;
+}
+
+.access-title .section-title-en-right {
+  color: #6C6969;
+  right: clamp(1.875rem, -7.0535714286rem + 9.5238095238vw, 4.375rem);
+}
+@media screen and (max-width: 1499px) {
+  .access-title .section-title-en-right {
+    position: absolute;
+    writing-mode: vertical-lr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .access-title .section-title-en-right {
+    top: 5rem;
+  }
+}
+
+.access-title .section-title-en-right span {
+  color: #FFD600;
+}
+
+.access-map {
+  width: 100%;
+  height: 50rem;
+}
+@media screen and (max-width: 767px) {
+  .access-map {
+    height: 31.25rem;
+  }
+}
+
+.access-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.adress {
+  background: #3A3838;
+  color: #fff;
+}
+
+.adress-inner {
+  max-width: 90.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .adress-inner {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .adress-content {
+    margin-inline: auto;
+  }
+}
+
+.adress-body {
+  margin-top: 2.625rem;
+  display: block;
+  font-style: normal;
+}
+
+.adress-name {
+  font-size: 3.125rem;
+}
+
+.adress-post {
+  font-size: 1.5rem;
+}
+
+.adress-text {
+  font-size: 1.75rem;
+}
+
+.adress-tel {
+  margin-top: 1.0625rem;
+  font-size: 2.25rem;
+}
+
+.adress-tel span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .adress-mark {
+    display: none;
+  }
+}
+
+.copyright {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: auto;
+}
+@media screen and (max-width: 1023px) {
+  .copyright {
+    margin-top: 3.75rem;
+    text-align: center;
   }
 }
 
